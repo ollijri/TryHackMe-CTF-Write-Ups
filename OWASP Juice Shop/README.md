@@ -96,6 +96,11 @@
   
   Answer = fb364762a3c102b2db932069c0e6b78e738d4066
   
-  
-  
+</details>
+
+## Who broke my lock?! 
+
+<details> 
+  <summary> Question #1: Bruteforce the Administrator account's password! </summary>
+   A1: JavaScript 
 </details>
