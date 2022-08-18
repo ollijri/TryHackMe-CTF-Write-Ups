@@ -102,5 +102,17 @@
 
 <details> 
   <summary> Question #1: Bruteforce the Administrator account's password! </summary>
-   A1: JavaScript 
+   
+   First, just like the two times previously, intercept the random information inputted into the account login page, as we know the admin email we might as well use that as one of the fields to prevent having to write it out again
+   
+   ![image](https://user-images.githubusercontent.com/66912443/185338620-eb019681-8ee0-46c0-9682-4996486b3cd0.png)
+   
+   Next, for the purpose of brute forcing, right click in the proxy window where the text is (anywhere will do) and select "send to intruder". Once on the intruder window hit the "Clear §" button to the right hand side to remove the weird symbol that burp uses for quotations.
+   
+   Once that is done, remove whatever you put into the password field (excluding the quotation marks) and replace it with two of those symbols using the "add §" button. This symbol will indicate what burp needs to change when bruteforcing.
+   
+   ![image](https://user-images.githubusercontent.com/66912443/185339578-be1ec92c-cbc9-42bd-aa3e-832bfae87c94.png)
+   
+   
+   
 </details>
