@@ -195,3 +195,29 @@ When it comes to this task, its heavily based on "Open Source Intelligence" (OSI
   ``` Answer = 66bdcffad9e698fd534003fbb3cc7e2b7b55d7f0 ```
   
 </details>
+
+<details> 
+  <summary> Question #3: Download the Backup file! </summary>
+  <p></p>
+  Returning to /ftp/, trying to download 'package.json.bak' will throw the following error:
+  <p><p/>
+  
+  ![image](https://user-images.githubusercontent.com/66912443/185403915-67eb460c-6013-4c62-821b-f60cbad4e077.png)
+  
+  If the code behind the scenes isnt sanitising the input correctly, a 'null byte' can be used to terminate the end of a string and therefore potentially blocking code after the URL that would tell the system not to let you download a file. 
+  
+  A null byte typically looks like "%00" but for use within URLs it looks like "%2500". Putting ".md" after the null byte completes the exploit and lets you download. As there is techincally not a "package.json.bak.md" you cant just put the extension there and has to be after the null byte.
+  <p><p/>
+  
+  ![image](https://user-images.githubusercontent.com/66912443/185405805-098139ff-1c21-4412-8e94-ff028dd6b1ea.png)
+  
+  
+  Returning to the main menu gives you the answer.
+  <p></p>
+  
+  ```Answer = bfc1e6b4a16579e85e06fee4c36ff8c02fb13795```
+  
+</details>
+
+## Who's flying this thing? 
+
