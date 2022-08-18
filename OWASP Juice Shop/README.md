@@ -162,8 +162,6 @@ When it comes to this task, its heavily based on "Open Source Intelligence" (OSI
   
   Download and read aquisitions.mb. This is the confidential document and completes the challenge, heading back to the website will reveal the code.
   
-  ``` Answer: edf9281222395a1c5fee9b89e32175f1ccf50c5b ```
-  
 </details>
 
 <details> 
@@ -172,8 +170,6 @@ When it comes to this task, its heavily based on "Open Source Intelligence" (OSI
   <p><p/>
   
   https://www.youtube.com/watch?v=v59CX2DiX0Y
-  
-  ``` Answer = 66bdcffad9e698fd534003fbb3cc7e2b7b55d7f0 ```
   
 </details>
 
@@ -195,8 +191,6 @@ When it comes to this task, its heavily based on "Open Source Intelligence" (OSI
   
   Returning to the main menu gives you the answer.
   <p></p>
-  
-  ```Answer = bfc1e6b4a16579e85e06fee4c36ff8c02fb13795```
   
 </details>
 
