@@ -14,42 +14,46 @@
 
 <details> 
   <summary> Question #1: What's the Administrator's email address? </summary>
-  
+  <p></p>
   An administrator has left a review on a product logged in as the admin which exposes what the address is
+  <p></p>
   
   ![image](https://user-images.githubusercontent.com/66912443/184948637-48d4e7eb-fdf7-4f5a-bbdf-753cf4a78ec0.png)
   
-  Answer = admin@juice-sh.op 
+  ``` Answer = admin@juice-sh.op ```
 </details>
 
 <details> 
   <summary> Question #2: What parameter is used for searching? </summary>
-  
-  by using the search function (magnifying glass) we can easily expose this parameter
+  <p></p>
+  By using the search function (magnifying glass) we can easily expose this parameter
+  <p></p>
   
   ![image](https://user-images.githubusercontent.com/66912443/184950365-ea52ef96-0cdf-402b-a876-f412842e855a.png)
-
-  ![image](https://user-images.githubusercontent.com/66912443/184949876-ae8f27fd-52f9-4ef1-8305-0f620701e5c0.png)
+  
+  <p></p>
   
   Once anything has been searched, from the URL bar we can see the effect of the search, exposing the parameter "q" that is used before the input
   
   ![image](https://user-images.githubusercontent.com/66912443/184950178-7598108e-ec73-4ddb-ab66-6164f2da31aa.png)
 
-  Answer = q
+  ``` Answer = q ```
 </details>
 
 <details> 
   <summary> Question #3: What show does Jim reference in his review? </summary>
-   
+   <p></p>
    By looking around the products you can find "jim@juice-sh.op" left a review on the green smoothie.
-   
+   <p></p>
+  
    ![image](https://user-images.githubusercontent.com/66912443/184951521-d0689dd5-a76c-4f9f-a3b8-4d3fc3ffd71f.png)
    
    A simple google search of "replicator" reveals the answer
-   
+   <p></p>
+  
    ![image](https://user-images.githubusercontent.com/66912443/184951832-f732b23c-b908-41c8-8651-5e8a57b448b5.png)
    
-   Answer = star trek
+   ``` Answer = star trek ```
    
 </details>
 
@@ -57,10 +61,14 @@
 
 <details> 
   <summary> Question #1: Log into the administrator account! </summary>
-  
-  at this point make sure that intercept is on in burpsuite and if using foxyproxy that the option is set to "Burp"
+  <p></p>
+  At this point make sure that intercept is on in burpsuite and if using foxyproxy that the option is set to "Burp"
+  <p></p>
   
   ![image](https://user-images.githubusercontent.com/66912443/184953030-12b1dcc6-10bd-4aeb-bff9-af4fd9e320c4.png)
+  
+  <p></p>
+  
   ![image](https://user-images.githubusercontent.com/66912443/184953343-2a97460f-6b6e-47a5-8b86-462183be51b8.png)
   
   Now that Burpsuite is up, navigate to "account" (next to the search bar) and enter in anything into the email and password field 
@@ -81,7 +89,7 @@
   
   ![image](https://user-images.githubusercontent.com/66912443/184960236-c5f5c13b-4728-465c-9565-20bf15417c98.png)
   
-  Ans = 32a5e0f21372bcc1000a6088b93b458e41f0e02a
+  ``` Ans = 32a5e0f21372bcc1000a6088b93b458e41f0e02a ```
   
 </details>
 
@@ -129,4 +137,17 @@
    
 </details>
 
+<details>
+<summary> Question #2: Reset Jim's password! </summary>
+<p><p/>
+When it comes to this task, its heavily based on "Open Source Intelligence" (OSINT) and provides a perfect example of the kind of ways to gather information about someone in order to break into their account. 
+  
+  To begin, navigate to the forgot password screen and enter jim's email (obtained in an earlier section). Here you will see the security question "Your eldest siblings middle name"
+  
+![image](https://user-images.githubusercontent.com/66912443/185348966-d0a5a076-a6f9-4268-9473-5aa544e5bcd0.png)
+  
+  
+
+
+</details>
 
