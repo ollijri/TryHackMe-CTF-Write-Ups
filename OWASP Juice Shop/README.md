@@ -163,7 +163,7 @@ When it comes to this task, its heavily based on "Open Source Intelligence" (OSI
 ## AH! Don't look!
 
 <details> 
-  <summary> Gaining Access</summary>
+  <summary> Question #1: Access the Confidential Document! </summary>
   <p></p>
   In the "About us" section is a link to auto-download a file... But what is the full link? Where is the file stored?
   <p><p/>
@@ -182,5 +182,12 @@ When it comes to this task, its heavily based on "Open Source Intelligence" (OSI
   Download and read aquisitions.mb. This is the confidential document and completes the challenge, heading back to the website will reveal the code.
   
   ``` Answer: edf9281222395a1c5fee9b89e32175f1ccf50c5b ```
+  
+</details>
+
+<details> 
+  <summary> Question #2: Log into MC SafeSearch's account! </summary>
+
+  
   
 </details>
