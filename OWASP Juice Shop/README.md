@@ -83,8 +83,6 @@
   
   ![image](https://user-images.githubusercontent.com/66912443/184960236-c5f5c13b-4728-465c-9565-20bf15417c98.png)
   
-  ``` Answer = 32a5e0f21372bcc1000a6088b93b458e41f0e02a ```
-  
 </details>
 
 
