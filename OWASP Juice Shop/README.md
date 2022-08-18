@@ -133,7 +133,7 @@
 
    Once its completed and you have the password (the status code 200 is a dead giveaway) you can log in and get the answer!
    
-   Answer = c2110d06dc6f81c67cd8099ff0ba601241f1ac0e
+  ``` Answer = c2110d06dc6f81c67cd8099ff0ba601241f1ac0e ```
    
 </details>
 
