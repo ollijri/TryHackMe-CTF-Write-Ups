@@ -96,7 +96,7 @@
 
 <details> 
   <summary> Question #2: Log into the Bender account! </summary>
-   
+   <p><p/>
   Following the exact same method used to get into the admin account, supplement "' or 1=1--" in the email field with "bender@juice-sh.op'--" instead.
   
   You may have noticed that the apostrophe and double dashes have moved next to each other. As this is an actual email, everything after it is commented out instead as calling back to the previous question, the apostrophe marks the closing of brackets to an SQL query.
@@ -104,7 +104,7 @@
   ![image](https://user-images.githubusercontent.com/66912443/184964819-9958b99b-ccbd-4ba1-8546-c871cdc1c9cf.png)
 
   
-  Answer = fb364762a3c102b2db932069c0e6b78e738d4066
+  ``` Answer = fb364762a3c102b2db932069c0e6b78e738d4066 ```
   
 </details>
 
