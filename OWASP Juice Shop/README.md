@@ -162,4 +162,25 @@ When it comes to this task, its heavily based on "Open Source Intelligence" (OSI
 
 ## AH! Don't look!
 
-
+<details> 
+  <summary> Gaining Access</summary>
+  <p></p>
+  In the "About us" section is a link to auto-download a file... But what is the full link? Where is the file stored?
+  <p><p/>
+  
+  
+  ![image](https://user-images.githubusercontent.com/66912443/185393977-a6b703ac-c954-4eb4-974e-973e70830270.png)
+  
+  By copying the link location and pasting it into a new tab, it reveals the full path as the following:
+  
+  ``` http://10.10.255.126/ftp/legal.md ```
+  
+  This exposes the existance of an ftp server which could be insecure. By removing the name of the file and stopping at /ftp/ you get access!
+  
+  ![image](https://user-images.githubusercontent.com/66912443/185394599-2aaa5c57-c39f-47ee-932d-ce6d1458df7e.png)
+  
+  Download and read aquisitions.mb. This is the confidential document and completes the challenge, heading back to the website will reveal the code.
+  
+  ``` Answer: edf9281222395a1c5fee9b89e32175f1ccf50c5b ```
+  
+</details>
