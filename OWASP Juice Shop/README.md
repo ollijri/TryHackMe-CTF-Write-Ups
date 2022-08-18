@@ -112,7 +112,7 @@
 
 <details> 
   <summary> Question #1: Bruteforce the Administrator account's password! </summary>
-   
+   <p><p/>
    First, just like the two times previously, intercept the random information inputted into the account login page, as we know the admin email we might as well use that as one of the fields to prevent having to write it out again
    
    ![image](https://user-images.githubusercontent.com/66912443/185338620-eb019681-8ee0-46c0-9682-4996486b3cd0.png)
