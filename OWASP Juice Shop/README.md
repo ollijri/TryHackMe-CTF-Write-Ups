@@ -20,7 +20,6 @@
   
   ![image](https://user-images.githubusercontent.com/66912443/184948637-48d4e7eb-fdf7-4f5a-bbdf-753cf4a78ec0.png)
   
-  ``` Answer = admin@juice-sh.op ```
 </details>
 
 <details> 
@@ -33,11 +32,10 @@
   
   <p></p>
   
-  Once anything has been searched, from the URL bar we can see the effect of the search, exposing the parameter "q" that is used before the input
+  Once anything has been searched, from the URL bar we can see the effect of the search, exposing the parameter that is used before the input
   
   ![image](https://user-images.githubusercontent.com/66912443/184950178-7598108e-ec73-4ddb-ab66-6164f2da31aa.png)
 
-  ``` Answer = q ```
 </details>
 
 <details> 
@@ -50,10 +48,6 @@
    
    A simple google search of "replicator" reveals the answer
    <p></p>
-  
-   ![image](https://user-images.githubusercontent.com/66912443/184951832-f732b23c-b908-41c8-8651-5e8a57b448b5.png)
-   
-   ``` Answer = star trek ```
    
 </details>
 
