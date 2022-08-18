@@ -142,12 +142,24 @@
 <p><p/>
 When it comes to this task, its heavily based on "Open Source Intelligence" (OSINT) and provides a perfect example of the kind of ways to gather information about someone in order to break into their account. 
   
-  To begin, navigate to the forgot password screen and enter jim's email (obtained in an earlier section). Here you will see the security question "Your eldest siblings middle name"
+  To begin, navigate to the forgot password screen and enter Jim's email (obtained in an earlier section). Here you will see the security question "Your eldest siblings middle name"
   
 ![image](https://user-images.githubusercontent.com/66912443/185348966-d0a5a076-a6f9-4268-9473-5aa544e5bcd0.png)
   
+  For this, external research is required. Just like how in a real world exaple you'd need to scour the targets social media to uncover information, in this instanced its star trek themed so wikipedia is required (to be honest, without tryhackme pointing it out I would not have had a CLUE, its so vague!).
   
-
+  According to the wiki, James (Jim) Kirk had one sibling, "George Samuel Kirk".
+  
+  ![image](https://user-images.githubusercontent.com/66912443/185391944-6925eb26-d0f6-483b-b738-b123828963d5.png)
+  
+  After entering the middle name of his sibling into the security question box, the password was successfully changeable!
+  
+  ![image](https://user-images.githubusercontent.com/66912443/185392395-089a483d-9c21-47b2-a87b-00021255de27.png)
+  
+  ``` Answer = 094fbc9b48e525150ba97d05b942bbf114987257 ```
 
 </details>
+
+## AH! Don't look!
+
 
