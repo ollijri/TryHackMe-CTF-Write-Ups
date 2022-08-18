@@ -188,6 +188,10 @@ When it comes to this task, its heavily based on "Open Source Intelligence" (OSI
 <details> 
   <summary> Question #2: Log into MC SafeSearch's account! </summary>
 
+  <p><p/>
   
+  https://www.youtube.com/watch?v=v59CX2DiX0Y
+  
+  ``` Answer = 66bdcffad9e698fd534003fbb3cc7e2b7b55d7f0 ```
   
 </details>
