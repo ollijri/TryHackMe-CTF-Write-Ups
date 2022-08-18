@@ -2,8 +2,10 @@
 
 <details> 
   <summary> Gaining Access</summary>
+  <p></p>
+  Use either openVPN or the hackbox, start the virtual machine and then enter the IP address into the URL bar at the top of your browser.
+  <p></p>
   
-  Use either openVPN or the hackbox, start the virtual machine and then enter the IP address into the URL bar at the top of your browser
   
   ![image](https://user-images.githubusercontent.com/66912443/184948233-78f2a0d2-ce02-4d9d-ac17-61d77c622098.png)
 </details>
