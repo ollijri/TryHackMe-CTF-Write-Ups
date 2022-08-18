@@ -94,9 +94,6 @@
   You may have noticed that the apostrophe and double dashes have moved next to each other. As this is an actual email, everything after it is commented out instead as calling back to the previous question, the apostrophe marks the closing of brackets to an SQL query.
   
   ![image](https://user-images.githubusercontent.com/66912443/184964819-9958b99b-ccbd-4ba1-8546-c871cdc1c9cf.png)
-
-  
-  ``` Answer = fb364762a3c102b2db932069c0e6b78e738d4066 ```
   
 </details>
 
@@ -119,13 +116,7 @@
   
   ![image](https://user-images.githubusercontent.com/66912443/185341240-724a669f-2b4a-428e-8b5e-73874dbb831c.png)
 
-  This open a window and start to tick along, its best to sort by status code - "2xx = [success]". Depending on the speed of your computer/VM this may take a while.
-  
-  ![image](https://user-images.githubusercontent.com/66912443/185347312-a57df26f-0585-4951-9381-362271ec097b.png)
-
-   Once its completed and you have the password (the status code 200 is a dead giveaway) you can log in and get the answer!
-   
-  ``` Answer = c2110d06dc6f81c67cd8099ff0ba601241f1ac0e ```
+  This open a window and start to tick along, its best to sort by status code - "2xx = [success]". Depending on the speed of your computer/VM this may take a while. Once its completed and you have the password (the status code 200 is a dead giveaway) you can log in and get the answer!
    
 </details>
 
@@ -147,8 +138,6 @@ When it comes to this task, its heavily based on "Open Source Intelligence" (OSI
   After entering the middle name of his sibling into the security question box, the password was successfully changeable!
   
   ![image](https://user-images.githubusercontent.com/66912443/185392395-089a483d-9c21-47b2-a87b-00021255de27.png)
-  
-  ``` Answer = 094fbc9b48e525150ba97d05b942bbf114987257 ```
 
 </details>
 
