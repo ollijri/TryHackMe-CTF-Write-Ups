@@ -109,10 +109,14 @@
    
    Next, for the purpose of brute forcing, right click in the proxy window where the text is (anywhere will do) and select "send to intruder". Once on the intruder window hit the "Clear §" button to the right hand side to remove the weird symbol that burp uses for quotations.
    
-   Once that is done, remove whatever you put into the password field (excluding the quotation marks) and replace it with two of those symbols using the "add §" button. This symbol will indicate what burp needs to change when bruteforcing.
+   Once that is done, remove whatever you put into the password field (excluding the quotation marks) and replace it with two of those symbols using the "add §" button. This symbol indicates what burp needs to change when bruteforcing.
    
    ![image](https://user-images.githubusercontent.com/66912443/185339578-be1ec92c-cbc9-42bd-aa3e-832bfae87c94.png)
    
-   
+   Next up is selecting a payload. Navigate to the next subtab "payloads" and add/load a new payload under "payload options" and start the attack. For this example a list from "seclists" is being used. These are excellent collections of lists similar to rockyou full of usernames, passwords, URLs etc.
+  
+  ![image](https://user-images.githubusercontent.com/66912443/185341240-724a669f-2b4a-428e-8b5e-73874dbb831c.png)
+
+  This open a window and start to tick along, its best to sort by status code - "2xx = [success]". Depending on the speed of your computer/VM this may take a while.
    
 </details>
