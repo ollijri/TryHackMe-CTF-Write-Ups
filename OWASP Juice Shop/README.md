@@ -221,3 +221,8 @@ When it comes to this task, its heavily based on "Open Source Intelligence" (OSI
 
 ## Who's flying this thing? 
 
+## Where did that come from?
+
+## Exploration
+
+7efd3174f9dd5baa03a7882027f2824d2f72d86e
