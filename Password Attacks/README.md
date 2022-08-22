@@ -62,7 +62,7 @@ Crunch, at least for me was not installed on my Linux device, this was easily fi
 ^ - special characters including space
   ```
   
-"THM" is a given and is known so does not need to have every combination generated with "," as that list would be so, sooooo long. The only parts that would differ would be "@" and "!". We can ascertain that as "@" and "!" are special characters, they must be represented by the "^" symbol. The final command would be as so:
+"THM" is a given and is known so does not need to have every combination generated with "," as that list would be sooooo long. The only parts that would differ would be "@" and "!". We can ascertain that as "@" and "!" are special characters, they must be represented by the "^" symbol. The final command would be as so:
   
   ``` crunch 5 5 -t THM^^ -o tryhackme.txt ```
 
@@ -121,6 +121,15 @@ Now that we known the hash is SHA-1, this helps with filling out the fields when
 <details>
 <summary> Perform a brute-force attack against the following MD5 hash: e48e13207341b6bffb7fb1622282247b. What is the cracked value? Note the password is a 4 digit number: [0-9][0-9][0-9][0-9] </summary>
 <p></p>
+
+Referring back to the table in the previous question, we know that MD5 is represented by the code "0".
+
+``` hascat -a 3 -m 0 e48e13207341b6bffb7fb1622282247b ?d?d?d?d ```
+
+"-a" determines the type of attack (3 meaning dictionary)
+"-m" determines the hash mode used (100 for SHA-1)
+"?d?d?d?d" indicates for the brute force to look for a 4 digit character (1 ?d = 1 digit)
+
 
 
 </details>
