@@ -204,6 +204,22 @@ Next is to create a custom wordlist using 'cewl' from the website that the email
                              
 ![image](https://user-images.githubusercontent.com/66912443/185932034-5727e811-608e-43fc-8ada-a6c3f80ca2d4.png)
 
+To create the final wordlist, the list created using cewl needs to be put through the rules created using john at the beginning.
+                             
+``` john --wordlist=clinic.lst --rules=THM-Example --stdout > john.txt ```
+  
+This will create a file full of all the password combinations.
+  
+![image](https://user-images.githubusercontent.com/66912443/185933639-d8c9ffc2-87e8-4605-89bc-4fa979e346b6.png)
+
+Now, finally to use it against the SMTP server. The below command, using hydra, will run a dictionary attack against the account similarly to other examples you've seen.
+  
+``` hydra -l pittman@clinic.thmredteam.com -P [path to final wordlist] smtp://[ip] -v ```
+
+After that has finished executing, as always this is computer dependent on how fast this will be, youll have your password.
+  
+![image](https://user-images.githubusercontent.com/66912443/185935399-ec36c083-6a8b-440a-ab62-dfcb4dc73add.png)
+
 
 </details>
 
