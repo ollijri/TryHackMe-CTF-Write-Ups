@@ -194,7 +194,14 @@ Sometimes FTP servers have an 'anonymous' account left open. This allows access 
  Az"[0-9][0-9]" ^[!@#$] <--- Rules
  ```
  
-![image](https://user-images.githubusercontent.com/66912443/185930201-93dfb0c6-bef6-4ef8-b122-be402c16c6ea.png)
+![image](https://user-images.githubusercontent.com/66912443/185931105-66f2011c-49f9-4406-a6fb-c05226e8ff16.png)
+                             
+Next is to create a custom wordlist using 'cewl' from the website that the email address comes from.
+
+``` cewl -m 8 -w clinic.lst https://clinic.thmredteam.com ```
+                             
+![image](https://user-images.githubusercontent.com/66912443/185932034-5727e811-608e-43fc-8ada-a6c3f80ca2d4.png)
+
 
 </details>
 
