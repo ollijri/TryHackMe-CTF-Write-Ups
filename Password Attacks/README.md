@@ -140,3 +140,12 @@ Referring back to the table in the previous question, we know that MD5 is repres
 
 ## Offline Attacks - Rule-Based
 
+<details>
+<summary> 
+
+What would (be) the syntax you would use to create a rule to produce the following: "S[Word]NN  where N is Number and S is a symbol of !@?  </summary>
+<p></p>
+
+
+
+</details>
