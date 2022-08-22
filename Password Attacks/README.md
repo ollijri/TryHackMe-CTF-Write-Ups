@@ -161,3 +161,36 @@ Referring back to the table in the previous question, we know that MD5 is repres
 ``` Az"[0-9][0-9]" ^[!@] ``` 
 
 </details>
+
+## Online password attacks
+
+<details>
+<summary> Can you guess the FTP credentials without brute-forcing? What is the flag? </summary>
+<p></p>
+
+
+
+</details>
+
+<details>
+<summary> What is the password? Note that the password format is as follows: [symbol][dictionary word][0-9][0-9]. </summary>
+<p></p>
+
+
+</details>
+
+<details>
+<summary> Perform a brute-forcing attack against the phillips account for the login page at [ip]/login-get using hydra? What is the flag? </summary>
+<p></p>
+
+
+</details>
+
+<details>
+<summary> Perform a rule-based password attack to gain access to the burgess account. Find the flag at the following website: [ip]/login-post/. What is the flag? </summary>
+<p></p>
+
+
+</details>
+
+
