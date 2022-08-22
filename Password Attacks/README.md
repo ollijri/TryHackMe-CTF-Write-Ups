@@ -186,7 +186,15 @@ Sometimes FTP servers have an 'anonymous' account left open. This allows access 
 <summary> What is the password? (for pittman@clinic.thmredteam.com) Note that the password format is as follows: [symbol][dictionary word][0-9][0-9]. </summary>
 <p></p>
 
-  The
+ To make this easier, first its best to create a new rule in john following the password formula given:
+ 
+ ```
+ sudo nano /etc/john/john.conf <--- open wherever your john is installed
+ [List.Rules:THM-Example] <--- Name the rule
+ Az"[0-9][0-9]" ^[!@#$] <--- Rules
+ ```
+ 
+![image](https://user-images.githubusercontent.com/66912443/185930201-93dfb0c6-bef6-4ef8-b122-be402c16c6ea.png)
 
 </details>
 
