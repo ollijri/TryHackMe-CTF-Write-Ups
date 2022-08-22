@@ -227,13 +227,38 @@ After that has finished executing, as always this is computer dependent on how f
 <summary> Perform a brute-forcing attack against the phillips account for the login page at [ip]/login-get using hydra? What is the flag? </summary>
 <p></p>
 
+First is gathering a litle bit of data on the victim... We know his name is 'Phillips' but we need more than that. On the clinic website, under 'Doctors' we can find a picture of Phillips along with his full name and email, which will be used to log in as him soon.
+
+![image](https://user-images.githubusercontent.com/66912443/185949136-0ccabc74-948b-4497-8f8a-3294fde9297f.png)
+
+To conduct the attack, we need to once again use Hydra, this time for a 'GET' attack, hence '/login-get'. 
+
+``` hydra -l phillips@clinic.thmredteam.com -P [path] [IP] http-get-form "/login-get/index.php:username=^USER^&password=^PASS^:S=logout.php" -f ```
+
+"-l" Specifies the username that is going to be tried with this attack  
+
+
+"-P" this is the path to the wordlist used to bruteforce the password  
+
+
+"http-get-form" specifies the type of attack being performed, this time a GET attack  
+
+
+"^USER^" Tells the program to brute force with the username  
+
+
+"^PASS^" Tells the program to brute force the password with the given file.  
+
+
+"-f" Tells the program to stop once its been successful  
+
 
 </details>
 
 <details>
 <summary> Perform a rule-based password attack to gain access to the burgess account. Find the flag at the following website: [ip]/login-post/. What is the flag? </summary>
 <p></p>
-
+Similarly to the previous attack, we will be using Hydra. This time, we will be utilising a 'POST' attack instead.
 
 </details>
 
