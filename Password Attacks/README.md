@@ -200,6 +200,8 @@ Next is to create a custom wordlist using 'cewl' from the website that the email
 
 ``` cewl -m 8 -w clinic.lst https://clinic.thmredteam.com ```
                              
+"-m" indicates the minimum wordlength to pick up (default is 3)
+                             
 ![image](https://user-images.githubusercontent.com/66912443/185932034-5727e811-608e-43fc-8ada-a6c3f80ca2d4.png)
 
 
