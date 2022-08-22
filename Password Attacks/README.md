@@ -168,8 +168,18 @@ Referring back to the table in the previous question, we know that MD5 is repres
 <summary> Can you guess the FTP credentials without brute-forcing? What is the flag? </summary>
 <p></p>
 
+Sometimes FTP servers have an 'anonymous' account left open. This allows access to a server to get information that is publically available, however in this case it can be used for more harm than good. As seen below using the username 'anonymous' with no password gave me access to this ftp server.
 
-
+  ![image](https://user-images.githubusercontent.com/66912443/185905336-bb588089-1d99-4759-b50f-d12ae52c5447.png)
+  
+  Listing all reveals a directory known as 'files' which within there lies the flag...
+  
+  ![image](https://user-images.githubusercontent.com/66912443/185905628-bc810e0d-8669-40ba-a88a-b23a376e3192.png)
+  
+  Using 'get' the flag is transferred to my machine and the flag is revealed 
+  
+  ``` THM{d0abe799f25738ad739c20301aed357b} ```
+  
 </details>
 
 <details>
