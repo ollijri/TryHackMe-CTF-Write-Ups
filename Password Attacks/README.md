@@ -117,3 +117,11 @@ Now that we known the hash is SHA-1, this helps with filling out the fields when
   </p>
   
 </details>
+
+<details>
+<summary> Perform a brute-force attack against the following MD5 hash: e48e13207341b6bffb7fb1622282247b. What is the cracked value? Note the password is a 4 digit number: [0-9][0-9][0-9][0-9] </summary>
+<p></p>
+
+
+</details>
+
