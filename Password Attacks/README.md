@@ -141,11 +141,23 @@ Referring back to the table in the previous question, we know that MD5 is repres
 ## Offline Attacks - Rule-Based
 
 <details>
-<summary> 
-
-What would (be) the syntax you would use to create a rule to produce the following: "S[Word]NN  where N is Number and S is a symbol of !@?  </summary>
+<summary> What would (be) the syntax you would use to create a rule to produce the following: "S[Word]NN  where N is Number and S is a symbol of !@? </summary>
 <p></p>
-
-
+  
+"Az" Specifies there is a word here 
+  
+  
+  "[0-9]" Specifies there is a number. There must be quotations on either side of the closed square brackets and the brackets can be put next to each other for more numbers  
+  
+  
+  "^" Means append a special character to the beginning of each word  
+  
+  
+  "$" Means append a special character to the end of each word
+  
+  With this all in mind, it can be put together to create the following:
+  
+  
+``` Az"[0-9][0-9]" ^[!@] ``` 
 
 </details>
