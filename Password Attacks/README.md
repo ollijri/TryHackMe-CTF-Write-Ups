@@ -111,6 +111,9 @@ Now that we known the hash is SHA-1, this helps with filling out the fields when
 
   To get your answer, press the up arrow to get the previous command again and add "--show"
   
-  ![image](https://user-images.githubusercontent.com/66912443/185894740-3fe0b40d-b264-4898-b2cd-6d590734cbd7.png)
+  <p></p>
+  <p align="center">
+  <img src="https://user-images.githubusercontent.com/66912443/185894740-3fe0b40d-b264-4898-b2cd-6d590734cbd7.png" >
+  </p>
   
 </details>
