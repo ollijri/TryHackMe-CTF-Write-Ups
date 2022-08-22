@@ -227,13 +227,9 @@ After that has finished executing, as always this is computer dependent on how f
 <summary> Perform a brute-forcing attack against the phillips account for the login page at [ip]/login-get using hydra? What is the flag? </summary>
 <p></p>
 
-First is gathering a litle bit of data on the victim... We know his name is 'Phillips' but we need more than that. On the clinic website, under 'Doctors' we can find a picture of Phillips along with his full name and email, which will be used to log in as him soon.
-
-![image](https://user-images.githubusercontent.com/66912443/185949136-0ccabc74-948b-4497-8f8a-3294fde9297f.png)
-
 To conduct the attack, we need to once again use Hydra, this time for a 'GET' attack, hence '/login-get'. 
 
-``` hydra -l phillips@clinic.thmredteam.com -P [path] [IP] http-get-form "/login-get/index.php:username=^USER^&password=^PASS^:S=logout.php" -f ```
+``` hydra -l phillips -P [path] [IP] http-get-form "/login-get/index.php:username=^USER^&password=^PASS^:S=logout.php" -f ```
 
 "-l" Specifies the username that is going to be tried with this attack  
 
@@ -251,6 +247,13 @@ To conduct the attack, we need to once again use Hydra, this time for a 'GET' at
 
 
 "-f" Tells the program to stop once its been successful  
+
+Putting that command through and running it will lead you to find the password, as seen below: (speed dependent on time taken as usual)
+  
+![image](https://user-images.githubusercontent.com/66912443/185955618-9448571b-65d0-4656-a58d-192b9886a7f5.png)
+
+At this point you can log in as phillips and get the flag!
+  
 
 
 </details>
