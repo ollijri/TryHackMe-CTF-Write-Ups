@@ -183,9 +183,10 @@ Sometimes FTP servers have an 'anonymous' account left open. This allows access 
 </details>
 
 <details>
-<summary> What is the password? Note that the password format is as follows: [symbol][dictionary word][0-9][0-9]. </summary>
+<summary> What is the password? (for pittman@clinic.thmredteam.com) Note that the password format is as follows: [symbol][dictionary word][0-9][0-9]. </summary>
 <p></p>
 
+  The
 
 </details>
 
