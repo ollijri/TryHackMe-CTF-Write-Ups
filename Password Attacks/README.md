@@ -124,13 +124,19 @@ Now that we known the hash is SHA-1, this helps with filling out the fields when
 
 Referring back to the table in the previous question, we know that MD5 is represented by the code "0".
 
-``` hascat -a 3 -m 0 e48e13207341b6bffb7fb1622282247b ?d?d?d?d ```
+``` hashcat -a 3 -m 0 e48e13207341b6bffb7fb1622282247b ?d?d?d?d ```
 
-"-a" determines the type of attack (3 meaning dictionary)
-"-m" determines the hash mode used (100 for SHA-1)
+"-a" determines the type of attack (3 meaning dictionary)  
+"-m" determines the hash mode used (100 for SHA-1)  
 "?d?d?d?d" indicates for the brute force to look for a 4 digit character (1 ?d = 1 digit)
-
-
+  <p></p>
+  The only step left is to run the command as we have everything we need already:
+  <p></p>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/66912443/185899243-2b182574-6892-49f4-b22d-996a8667246b.png" >
+  </p>
 
 </details>
+
+## Offline Attacks - Rule-Based
 
