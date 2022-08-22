@@ -176,7 +176,7 @@ Sometimes FTP servers have an 'anonymous' account left open. This allows access 
   
   ![image](https://user-images.githubusercontent.com/66912443/185905628-bc810e0d-8669-40ba-a88a-b23a376e3192.png)
   
-  Using 'get' the flag is transferred to my machine and the flag is revealed 
+  Using 'get', the flag is transferred to my machine and the flag is revealed: 
   
   ``` THM{d0abe799f25738ad739c20301aed357b} ```
   
