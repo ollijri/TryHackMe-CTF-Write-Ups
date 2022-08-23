@@ -309,7 +309,7 @@ As seen below the generated text file statisfies all requirements.
 
 Now for the main attack! We are once again using hydra.
 
-``` hydra -L usernames.txt -p final.txt ssh://[ip] ```
+``` hydra -L usernames.txt -P final.txt ssh://[ip] ```
 
   
 
