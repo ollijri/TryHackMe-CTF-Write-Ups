@@ -303,11 +303,11 @@ Once all the setup is complete, the final wordlist can be created using john
   
 ``` john --wordlist=seasons.txt --rules=THM-SSH --stdout > final.txt ```
   
-As seen below the generated text file statisfies all requirements.
+As seen below, the generated text file statisfies all requirements.
   
 ![image](https://user-images.githubusercontent.com/66912443/186154182-55d373bc-9bb5-481f-adb3-bc6a3fb1bc51.png)
 
-Now for the main attack! We are once again using hydra.
+Now for the main attack! We are once again using hydra. As always the speed of completion really does depend on the specs of your computer. This is especially important for this exercise as depending on how your wordlist is made it could end up HUGE!
 
 ``` hydra -L usernames.txt -P final.txt ssh://[ip] ```
 
