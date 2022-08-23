@@ -7,6 +7,8 @@
 <p></p>
 Between 'Password Cracking' and 'Password Guessing', <i>'Password Cracking'</i> is the correct answer as this usually involves cracking hashes on the attackers local machine.
 
+____________________________________________________________________________________________________________________
+
 </details>
 
 ## Password Profiling #1 - Default, Weak, Leaked, Combined , and Username Wordlists
@@ -25,6 +27,7 @@ This, from the aformentioned official user guide to the 'Juniper Networks ISG 20
   <p></p>
   
   ``` Source = https://www.juniper.net/documentation/hardware/netscreen-systems/netscreen-systems50/ug_isg_2000.pdf ```
+____________________________________________________________________________________________________________________
 
 </details>
 
@@ -45,6 +48,7 @@ Crunch, at least for me was not installed on my Linux device, this was easily fi
   <p align="center">
   <img src="https://user-images.githubusercontent.com/66912443/185888501-e0a3c124-60f3-4e58-8687-9f5db95ee26a.png" >
 </p>
+____________________________________________________________________________________________________________________
 
 </details>
 
@@ -67,6 +71,7 @@ Crunch, at least for me was not installed on my Linux device, this was easily fi
 "THM" is a given and is known so does not need to have every combination generated with "," as that list would be sooooo long. The only parts that would differ would be "@" and "!". We can ascertain that as "@" and "!" are special characters, they must be represented by the "^" symbol. The final command would be as so:
   
   ``` crunch 5 5 -t THM^^ -o tryhackme.txt ```
+____________________________________________________________________________________________________________________
 
 </details>
 
@@ -84,6 +89,7 @@ The tool of choice to identify hashes, 'hashid' was not installed on my Linux sy
   Running the following revealed the answer:
   
   ![image](https://user-images.githubusercontent.com/66912443/185891467-ebcb94f8-a836-442f-9316-c7eeec0e9aca.png)
+____________________________________________________________________________________________________________________
 
 </details>
 
@@ -117,7 +123,8 @@ Now that we known the hash is SHA-1, this helps with filling out the fields when
   <p align="center">
   <img src="https://user-images.githubusercontent.com/66912443/185894740-3fe0b40d-b264-4898-b2cd-6d590734cbd7.png" >
   </p>
-  
+  ____________________________________________________________________________________________________________________
+
 </details>
 
 <details>
@@ -137,6 +144,7 @@ Referring back to the table in the previous question, we know that MD5 is repres
 <p align="center">
   <img src="https://user-images.githubusercontent.com/66912443/185899243-2b182574-6892-49f4-b22d-996a8667246b.png" >
   </p>
+____________________________________________________________________________________________________________________
 
 </details>
 
@@ -162,6 +170,9 @@ Referring back to the table in the previous question, we know that MD5 is repres
   
 ``` Az"[0-9][0-9]" ^[!@] ``` 
 
+
+____________________________________________________________________________________________________________________
+
 </details>
 
 ## Online password attacks
@@ -181,7 +192,8 @@ Sometimes FTP servers have an 'anonymous' account left open. This allows access 
   Using 'get', the flag is transferred to my machine and the flag is revealed: 
   
   ``` THM{d0abe799f25738ad739c20301aed357b} ```
-  
+  ____________________________________________________________________________________________________________________
+
 </details>
 
 <details>
@@ -222,6 +234,7 @@ After that has finished executing, as always this is computer dependent on how f
   
 ![image](https://user-images.githubusercontent.com/66912443/185935399-ec36c083-6a8b-440a-ab62-dfcb4dc73add.png)
 
+____________________________________________________________________________________________________________________
 
 </details>
 
@@ -256,7 +269,7 @@ Putting that command through and running it will lead you to find the password, 
 
 At this point you can log in as phillips and get the flag!
   
-
+____________________________________________________________________________________________________________________
 
 </details>
 
@@ -280,7 +293,7 @@ As usual, putting that command through and running it will lead you to find the 
 ![image](https://user-images.githubusercontent.com/66912443/186148492-6c92dc85-1b69-4730-9543-e09e0c53c2f4.png)
 
  Just like before, now you can login and retrieve the flag!
-  
+  ____________________________________________________________________________________________________________________
 </details>
 
 ## Password spray attack 
@@ -325,5 +338,5 @@ At this stage you can successfully log in using SSH and get the flag!
 
 ![image](https://user-images.githubusercontent.com/66912443/186159588-b7c926ee-ae83-44cc-bb5b-9ab6862af33f.png)
 
-
+____________________________________________________________________________________________________________________
 </details>
