@@ -285,5 +285,32 @@ As usual, putting that command through and running it will lead you to find the 
   
 Perform a password spraying attack to get access to the SSH://[ip] server to read /etc/flag. What is the flag?
   
+As this exercise relies on password spraying to accounts, first off is to create a small text file full of the usernames to use. The example below is based off of the doctors on the clinic.thmredteam.com website used in these exercises.
+  
+![image](https://user-images.githubusercontent.com/66912443/186150103-b54fb95a-3e4a-447c-817c-1dd9de2d681e.png)
+
+This time, the hint exposes the password consists of "season+year+special character" so the first step would to be compile a dictionary of words that satisfy this criteria.
+  
+To begin, I have made a simple list of all the seasons to which to apply the rules upon for the final list. Both 'Fall' and 'Autumn' have been included as we do not know whether the user is American or not.
+  
+![image](https://user-images.githubusercontent.com/66912443/186151608-2f80ed7e-f197-4cea-8742-aefa5777a564.png)
+
+Next is to create the rule at the end of john.conf.
+  
+![image](https://user-images.githubusercontent.com/66912443/186154033-2bdb3d84-d526-47db-9413-d3a57e8bacba.png)
+ 
+Once all the setup is complete, the final wordlist can be created using john
+  
+``` john --wordlist=seasons.txt --rules=THM-SSH --stdout > final.txt ```
+  
+As seen below the generated text file statisfies all requirements.
+  
+![image](https://user-images.githubusercontent.com/66912443/186154182-55d373bc-9bb5-481f-adb3-bc6a3fb1bc51.png)
+
+Now for the main attack! We are once again using hydra.
+
+``` hydra -L usernames.txt -p final.txt ssh://[ip] ```
+
+  
 
 
