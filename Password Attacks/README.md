@@ -321,4 +321,7 @@ This took me a while to complete, but once it does the password will be revealed
 
 At this stage you can successfully log in using SSH and get the flag!
 
+![image](https://user-images.githubusercontent.com/66912443/186159588-b7c926ee-ae83-44cc-bb5b-9ab6862af33f.png)
+
+
 </details>
