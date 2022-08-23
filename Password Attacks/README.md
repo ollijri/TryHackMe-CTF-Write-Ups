@@ -1,5 +1,7 @@
 ![image](https://user-images.githubusercontent.com/66912443/186160038-28376090-59e3-4098-81d8-eaf74ee45fd0.png)
 
+____________________________________________________________________________________________________________________
+
 ## Password Attacking Techniques 
 
 <details>
