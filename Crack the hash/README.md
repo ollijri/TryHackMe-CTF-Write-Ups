@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/66912443/186184549-6e5854f9-6ff6-4883-aca8-0c53c57b4a94.png">
+</p>
+
 ## Level 1 
 
 <details>
@@ -162,5 +166,37 @@ By looking at the first 3 characters "$6$" and searching this up in the hash typ
 Below is the command you may use, personally I created a "hash.txt" file and put the hash within there as it was far too long for command line but worked fine once in that file. As this is a SHA-512 hash this will take some time to complete.  
 
 ``` hashcat -m 1800 -a 0 hash.txt /usr/share/wordlists/rockyou.txt ```
-  
+
+Answer = waka99
+
 ____________________________________________________________________________________________________________________
+
+</details>
+
+
+<details>
+<summary> e5d8870e5bdd26602cab8dbe07a942c8669e56d6:tryhackme </summary>
+<p></p>
+Using hashes.com, we can identify this hash as another SHA1 hash. The difference here however is that this is a salted SHA1 so when it comes to using the table it will be slightly different.
+<p></p>
+
+![image](https://user-images.githubusercontent.com/66912443/186183213-c813c9fd-f177-4754-9ae3-ccf9b7339449.png)
+
+As seen previously, in the hash type table SHA1 is hash mode "100". However, as this time it is salted we will be using code "160" instead (HMAC-SHA1).
+
+HMAC stands for "Hash-Based Message Authentication" and it operated using a shared secret key which in this instance is "tryhackme" (used as the salt).
+
+![image](https://user-images.githubusercontent.com/66912443/186183425-e3b4a21e-1554-45ba-8d58-a6ebcbc0d11d.png)
+
+From this point onwards its pretty much as normal. Once again I have put the hash inside a text file instead to make sure it works properly with hashcat.
+
+``` hashcat -m 160 -a 0 hash.txt /usr/share/wordlists/rockyou.txt ```
+
+![image](https://user-images.githubusercontent.com/66912443/186182309-8d77349a-f326-4a17-86fa-192eee50f184.png)
+
+____________________________________________________________________________________________________________________
+
+</details>
+
+
+
