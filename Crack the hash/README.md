@@ -18,6 +18,7 @@
   <p></p>
   Alternatively, https://crackstation.net/ immediately cracks this hash
   
+  ____________________________________________________________________________________________________________________
 </details>
 
 <details>
@@ -39,6 +40,7 @@
   
   ![image](https://user-images.githubusercontent.com/66912443/186169319-cece8fbc-4700-4c9c-af7b-07369a362e20.png)
   
+  ____________________________________________________________________________________________________________________
 </details>
 
 <details>
@@ -59,6 +61,7 @@
   
 ![image](https://user-images.githubusercontent.com/66912443/186173873-aabcb898-738d-461d-9d3c-57cabde353d2.png)
 
+  ____________________________________________________________________________________________________________________
   
 </details>
 
@@ -80,6 +83,8 @@
   
   Answer = bleh
   
+ ____________________________________________________________________________________________________________________ 
+ 
 </details>
 
 <details>
@@ -100,7 +105,62 @@ Alternitively, Hashes.com immediately tells us this again.
 
 ![image](https://user-images.githubusercontent.com/66912443/186169603-5361aec2-9321-4e7b-bf11-f00ff90699c7.png)
 
+  ____________________________________________________________________________________________________________________
+  
   </details>
 
 ## Level 2
 
+<details>
+<summary> F09EDCB1FCEFC6DFB23DC3505A882655FF77375ED8AA2D1C13F640FCCC2D0C85 </summary>
+  <p></p>
+  Using Hashes.com we can work out the algorithm used is SHA256
+  <p></p>
+  
+  ![image](https://user-images.githubusercontent.com/66912443/186175646-c3f54f75-ea8d-4ca7-b4ba-abd234a4bd42.png)
+
+  From the previous examples we know the SHA256 flag code is "1400". Therefore the command for hashcat is as follows:
+  
+  ``` hashcat -m 1400 -a 0 F09EDCB1FCEFC6DFB23DC3505A882655FF77375ED8AA2D1C13F640FCCC2D0C85 /usr/share/wordlists/rockyou.txt ```
+  
+![image](https://user-images.githubusercontent.com/66912443/186176107-0ec6c284-f6d1-481c-8cbc-1641fe889c5e.png)
+
+____________________________________________________________________________________________________________________
+  
+</details>
+
+<details>
+  <summary> 1DFECA0C002AE40B8619ECF94819CC1B </summary>
+  <p></p>
+Hashes.com identifies this algorithm as "NTLM"
+  <p></p>
+  
+![image](https://user-images.githubusercontent.com/66912443/186176288-fa2f2fe1-728a-43e3-8b6e-0800a08b8e5c.png)
+
+In the hashcat hash type table, the code is revealed as "1000"
+  
+![image](https://user-images.githubusercontent.com/66912443/186176560-6876326f-e40c-487d-a67e-693876939bc7.png)
+  
+With all this knowledge we can put the command together as follows:
+  
+``` hashcat -m 1000 -a 0 1DFECA0C002AE40B8619ECF94819CC1B /usr/share/wordlists/rockyou.txt ```
+  
+![image](https://user-images.githubusercontent.com/66912443/186176905-c4b21681-cd55-4e9d-86ee-f882e2b74fe6.png)
+
+____________________________________________________________________________________________________________________ 
+
+</details>
+
+<details>
+<summary> $6$aReallyHardSalt$6WKUTqzq.UQQmrm0p/T7MPpMbGNnzXPMAXi4bJMl9be.cfi3/qxIf.hsGpS41BqMhSrHVXgMpdjS6xeKZAs02.</summary>
+  <p></p>
+By looking at the first 3 characters "$6$" and searching this up in the hash types table we can see this is a salted hash of type SHA-512. This allows us to get the flag code of 1800.
+  <p></p>
+
+![image](https://user-images.githubusercontent.com/66912443/186177634-1510ac78-3258-4535-b4ca-d178bf08f28d.png)
+
+Below is the command you may use, personally I created a "hash.txt" file and put the hash within there as it was far too long for command line but worked fine once in that file. As this is a SHA-512 hash this will take some time to complete.  
+
+``` hashcat -m 1800 -a 0 hash.txt /usr/share/wordlists/rockyou.txt ```
+  
+____________________________________________________________________________________________________________________
