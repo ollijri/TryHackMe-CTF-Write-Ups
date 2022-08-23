@@ -281,4 +281,9 @@ As usual, putting that command through and running it will lead you to find the 
   
 </details>
 
+## Password spray attack 
+  
+Perform a password spraying attack to get access to the SSH://[ip] server to read /etc/flag. What is the flag?
+  
+
 
