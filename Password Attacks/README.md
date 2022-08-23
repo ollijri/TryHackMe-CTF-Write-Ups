@@ -283,8 +283,10 @@ As usual, putting that command through and running it will lead you to find the 
 
 ## Password spray attack 
   
-Perform a password spraying attack to get access to the SSH://[ip] server to read /etc/flag. What is the flag?
-  
+<details>
+<summary> Perform a password spraying attack to get access to the SSH://[ip] server to read /etc/flag. What is the flag? </summary>
+<p></p>
+
 As this exercise relies on password spraying to accounts, first off is to create a small text file full of the usernames to use. The example below is based off of the doctors on the clinic.thmredteam.com website used in these exercises.
   
 ![image](https://user-images.githubusercontent.com/66912443/186150103-b54fb95a-3e4a-447c-817c-1dd9de2d681e.png)
@@ -310,6 +312,12 @@ As seen below, the generated text file statisfies all requirements.
 Now for the main attack! We are once again using hydra. As always the speed of completion really does depend on the specs of your computer. This is especially important for this exercise as depending on how your wordlist is made it could end up HUGE!
 
 ``` hydra -L usernames.txt -P final.txt ssh://[ip] ```
+  
+
+
+</details>
+  
+
 
   
 
