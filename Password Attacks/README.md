@@ -263,6 +263,10 @@ At this point you can log in as phillips and get the flag!
 <p></p>
 Similarly to the previous attack, we will be using Hydra. This time, we will be utilising a 'POST' attack instead.
 
+The hint to this question refers to the need for the 'single extra' rule in john when creating a wordlist, so the first task will be to create a new wordlist from the original 'clinic.lst' for use in the exercise.
+
+``` john --wordlist=clinic.lst --rules=Single-Extra --stdout > burgess.txt ```
+
 </details>
 
 
