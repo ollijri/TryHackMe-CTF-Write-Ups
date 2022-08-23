@@ -263,11 +263,16 @@ At this point you can log in as phillips and get the flag!
 <p></p>
 Similarly to the previous attack, we will be using Hydra. This time, we will be utilising a 'POST' attack instead.
   <p></p>
-The hint to this question refers to the need for the 'single extra' rule in john when creating a wordlist, so the first task will be to create a new wordlist from the original 'clinic.lst' for use in the exercise.
+The hint to this question refers to the need for the 'single extra' rule in john when creating a wordlist, so the first task will be to create a new wordlist from the original 'clinic.lst' for use in the exercise. There is no need to create this rule as it is included in the 'john.conf' file.
   <p></p>
   
 ``` john --wordlist=clinic.lst --rules=Single-Extra --stdout > burgess.txt ```
 
+So, now we have our wordlist it is time to conduct the attack against the '/login-post' address. The syntax for this hydra command is quite similar to the previous tasks, in fact I just copied and pasted it and changed some words around.
+  <p></p>
+  
+  ``` hydra -l burgess -P [path] [IP] http-post-form "/login-post/index.php:username=^USER^&password=^PASS^:S=logout.php" -f ```
+  
 </details>
 
 
