@@ -273,6 +273,12 @@ So, now we have our wordlist it is time to conduct the attack against the '/logi
   
   ``` hydra -l burgess -P [path] [IP] http-post-form "/login-post/index.php:username=^USER^&password=^PASS^:S=logout.php" -f ```
   
+As usual, putting that command through and running it will lead you to find the password as seen below:
+
+![image](https://user-images.githubusercontent.com/66912443/186148492-6c92dc85-1b69-4730-9543-e09e0c53c2f4.png)
+
+ Just like before, now you can login and retrieve the flag!
+  
 </details>
 
 
