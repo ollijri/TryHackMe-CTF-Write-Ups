@@ -315,6 +315,10 @@ Now for the main attack! We are once again using hydra. As always the speed of c
 
 ``` hydra -L usernames.txt -P final.txt ssh://[ip] ```
   
+This took me a while to complete, but once it does the password will be revealed, and im very glad I included Fall otherwise i would never have got that!
 
+![image](https://user-images.githubusercontent.com/66912443/186159227-11e46740-c2a3-459f-8bc2-3eb0a43704f5.png)
+
+At this stage you can successfully log in using SSH and get the flag!
 
 </details>
