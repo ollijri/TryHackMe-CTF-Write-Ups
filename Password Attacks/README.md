@@ -262,9 +262,10 @@ At this point you can log in as phillips and get the flag!
 <summary> Perform a rule-based password attack to gain access to the burgess account. Find the flag at the following website: [ip]/login-post/. What is the flag? </summary>
 <p></p>
 Similarly to the previous attack, we will be using Hydra. This time, we will be utilising a 'POST' attack instead.
-
+  <p></p>
 The hint to this question refers to the need for the 'single extra' rule in john when creating a wordlist, so the first task will be to create a new wordlist from the original 'clinic.lst' for use in the exercise.
-
+  <p></p>
+  
 ``` john --wordlist=clinic.lst --rules=Single-Extra --stdout > burgess.txt ```
 
 </details>
