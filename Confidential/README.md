@@ -7,7 +7,7 @@ ________________________________________________________________________________
 <details>
 <summary> METHOD 1 </summary>
   <p></p>
-On tarting the machine we are sent to '/home/ubuntu/confidential/' presenting us with the PDF we need to extract the QR code from.
+On starting the machine, we are sent to '/home/ubuntu/confidential/' presenting us with the PDF we need to extract the QR code from.
   <p></p>
 
 ![image](https://user-images.githubusercontent.com/66912443/186401405-b90598ea-9e6f-4d56-965c-1865d8b6f6d7.png)
@@ -26,7 +26,7 @@ On the attacker machine, we then setup another netcat session to accept the file
 
 ![image](https://user-images.githubusercontent.com/66912443/186408034-6b45036a-256c-4826-ae39-d9091caa1db9.png)
 
-Next is to extract the images. For this example I will be using 'pdfimages with the following command:
+Next is to extract the images. For this example I will be using 'pdfimages' with the following command:
 
 ``` pdfimages examine.pdf image ```
 
