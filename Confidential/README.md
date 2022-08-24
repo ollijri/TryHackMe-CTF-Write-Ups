@@ -14,7 +14,7 @@ On tarting the machine we are sent to '/home/ubuntu/confidential/' presenting us
 
 As we know the QR code is hidden within the pdf, it only makes sense to find a tool that makes this possible. Unfortunately for this box access is denied on installing any tools to help so we must move the file out from this VM into another, or your own device to make the use of tools possible.
 
-The first step would be to create a netcat session that will listen for an input and transmit the file:
+The first step would be to create a netcat session that will listen and transmit the file:
 
 ``` nc -lvnp 2000 < Repdf.pdf ```
 
