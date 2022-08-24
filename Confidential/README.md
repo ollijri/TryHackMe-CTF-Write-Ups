@@ -30,7 +30,7 @@ Next is to extract the images. For this example I will be using 'pdfimages' with
 
 ``` pdfimages examine.pdf image ```
 
-This will rip the images from the PDF and name them starting with 'image'. As you can see in the picture below this has outputted 3 files. Two of these files are the warning sign seen in the earlier PDF. However, the third image shows off just the pdf message without the covering!
+This will rip the images from the PDF and name them starting with 'image'. As you can see in the picture below this has outputted 3 files. Two of these files are the warning sign seen in the earlier PDF. However, the third image shows off just the message without the covering!
 
 ![image](https://user-images.githubusercontent.com/66912443/186410070-cb88df30-5f9a-4f2a-90c1-463743b9fb7c.png)
 
