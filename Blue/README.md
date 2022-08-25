@@ -283,10 +283,14 @@ ________________________________________________________________________________
 <details>
 <summary> Flag 3? This flag can be found in an excellent location to loot. After all, Administrators usually have pretty interesting things saved. </summary>
 
-This was found in the user Jon's \Documents\ directory.
+____________________________________________________________________________________________________________________   
   
+This was found in the user Jon's \Documents\ directory.
+
+
 ![image](https://user-images.githubusercontent.com/66912443/186683718-22c28b88-1ae6-4aa4-a154-7fb205924a37.png)
 
-
+____________________________________________________________________________________________________________________ 
+  
 </details>
 
