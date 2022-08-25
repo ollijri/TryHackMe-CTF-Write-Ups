@@ -205,7 +205,20 @@ ________________________________________________________________________________
 <details>
 <summary> Copy this password hash to a file and research how to crack it. What is the cracked password? </summary>
 
-Any folded content here. It requires an empty line just above it.
+  <p></p>
+  This is the hashdump we will be working with:
+  
+``` Jon:1000:aad3b435b51404eeaad3b435b51404ee:ffb43f0de35be4d9917ac0cc8ad57f8d::: ```
+  
+- 'Jon' Indicates the username
+- '1000' Indicates the SID
+- 'aad3b' Indicates the beginning of an LM hash, a very weak hash that john is good at cracking!
+  
+To make the hash easier to work with, I have first copied the hash and put it into a file called 'hash.txt' in the root directory.
+  
+![image](https://user-images.githubusercontent.com/66912443/186675515-4466972d-a3f0-401f-8c8f-e940ce9b1f96.png)
+
+Next, we will use john the ripper to crack the hashes. The command belkow will tell john to crack the paswords in the correct format.
 
 </details>
 
