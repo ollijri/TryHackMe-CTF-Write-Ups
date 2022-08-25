@@ -9,17 +9,18 @@ The command ``` winver ``` opens an 'About Windows' box that tells you all you n
 
 ![image](https://user-images.githubusercontent.com/66912443/186721361-8fb008bb-147b-4e5f-a580-1abdb8b30668.png)
 
-
 ____________________________________________________________________________________________________________________  
   
 </details>
 
 <details>
-<summary>  </summary>
+<summary> Which user logged in last? </summary>
   <p></p>
 
-____________________________________________________________________________________________________________________  
+____________________________________________________________________________________________________________________    
+Using powershell, running ``` Get-LocalUser | select * ``` will grab all users and the information about them and display that from within the powershell window. From this you can ascertain that Administrator was the last account logged in (yourself not included).
   
+![image](https://user-images.githubusercontent.com/66912443/186725969-82e64b11-5eef-4402-bd87-52b16b10ef3e.png)
 
 ____________________________________________________________________________________________________________________  
   
