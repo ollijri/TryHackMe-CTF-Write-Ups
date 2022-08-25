@@ -119,28 +119,70 @@ ________________________________________________________________________________
 <details>
 <summary> Run! If this doesn't work, try completing the exploit from the previous task once more. </summary>
 
+____________________________________________________________________________________________________________________ 
 
+  <p></p>
+  Running the exploit should lead you to see similar to this below. As seen in the text it says 'Meterpreter session 3 opened'. So the next step would be to navigate to it using the command:
+<p></p>  
+  
+``` sessions 3 ```
+
+  <p></p>  
+  
+![image](https://user-images.githubusercontent.com/66912443/186669699-49fc84fc-7b7a-49bf-b5e7-6d29bfba8a0b.png)
+  
+  ____________________________________________________________________________________________________________________ 
 
 </details>
 
 <details>
 <summary> Verify that we have escalated to NT AUTHORITY\SYSTEM. Run getsystem to confirm this. </summary>
 
-Any folded content here. It requires an empty line just above it.
+____________________________________________________________________________________________________________________ 
+  
+  <p></p>
+  Running 'getsytem':
+  <p></p>
+  
+  ![image](https://user-images.githubusercontent.com/66912443/186670379-144fb6db-c4a8-48e7-8121-2c1bb294e465.png)
+  
+  Opening a dos shell and running whoami:
+  
+  ![image](https://user-images.githubusercontent.com/66912443/186670738-df061830-ee4b-4a00-a779-2d34e8402ddd.png)
 
+____________________________________________________________________________________________________________________ 
+  
 </details>
 
 <details>
 <summary> List all of the processes running via the 'ps' command. Find a process towards the bottom of this list that is running at NT AUTHORITY\SYSTEM and write down the process id </summary>
 
-Any folded content here. It requires an empty line just above it. 
+____________________________________________________________________________________________________________________ 
+  
+  <p></p>
+  As seen in the cropped screenshot below, powershell.exe as well as many others are running at 'NT AUTHORITY/SYSTEM'. For simplicities sake I will stick with powershell, process ID 3056.
+  <p></p>
+  
+![image](https://user-images.githubusercontent.com/66912443/186671522-82c4c813-c4f0-492d-a3d6-346b435e3657.png)
+____________________________________________________________________________________________________________________   
 
 </details>
 
 <details>
 <summary> Migrate to this process using the 'migrate PROCESS_ID' command where the process id is the one you just wrote down in the previous step. </summary>
 
-Any folded content here. It requires an empty line just above it.
+____________________________________________________________________________________________________________________ 
+  
+  <p></p>
+This is as simple as the following command:
+  
+```migrate 3056 ```
+  
+This is useful as now we are running on a process that has system authority!
+  
+![image](https://user-images.githubusercontent.com/66912443/186671912-1726b9c4-7c78-41c4-934b-3772421e6a6b.png)
+
+____________________________________________________________________________________________________________________   
 
 </details>
 
@@ -149,8 +191,15 @@ Any folded content here. It requires an empty line just above it.
 <details>
 <summary> Within our elevated meterpreter shell, run the command 'hashdump'. What is the name of the non-default user? </summary>
 
-Any folded content here. It requires an empty line just above it.
+____________________________________________________________________________________________________________________ 
 
+  <p></p>
+  The name of the non-default user is <i> jon </i>
+  <p></p>
+  
+  ![image](https://user-images.githubusercontent.com/66912443/186672534-d803dffa-6966-49a6-8fff-7cb3614836bf.png)
+
+____________________________________________________________________________________________________________________   
 </details>
 
 <details>
