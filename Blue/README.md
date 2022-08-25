@@ -70,7 +70,7 @@ ________________________________________________________________________________
  
 ____________________________________________________________________________________________________________________ 
 
-Before running the exploit, make sure to run the following command as by default it will load meterpreter:
+Before running the exploit, make sure to run the following command as by default it will load meterpreter and a follow up question requires converting shell to meterpreter shell.
   
 ``` set payload windows/x64/shell/reverse_tcp ```
   
