@@ -8,6 +8,9 @@ ________________________________________________________________________________
 
 <details>
 <summary> 48bb6e862e54f2a795ffc4e541caed4d </summary>
+
+____________________________________________________________________________________________________________________
+
   <p></p>
   
   Using hashes.com, we can identify this hash as an MD5 hash.
@@ -29,6 +32,9 @@ ________________________________________________________________________________
 
 <details>
 <summary> CBFDAC6008F9CAB4083784CBD1874F76618D2A97 </summary>
+
+____________________________________________________________________________________________________________________
+
   <p></p>
   
   Using hash-identifier, we can ascertain that the hash is "SHA1" which, when using the hashcat hash types table we can see that this requires "-m 100" instead of "-m 0" like above.
@@ -51,6 +57,9 @@ ________________________________________________________________________________
 
 <details>
 <summary> 1C8BFE8F801D79745C4631D09FFF36C82AA37FC4CCE4FC946683D7B336B63032 </summary>
+
+____________________________________________________________________________________________________________________
+
   <p></p>
   
   Using hash-id we can work out that this hash is encrypted using SHA-256
@@ -73,6 +82,9 @@ ________________________________________________________________________________
 
 <details>
 <summary> $2y$12$Dwt1BZj6pcyc3Dy1FWZ5ieeUznr71EeNkJkUlypTsgbX1H68wsRom </summary>
+
+____________________________________________________________________________________________________________________
+
   <p></p>
   Using hash-id, we can see that this hash is encrypted using 'Blowfish':
   <p></p>
@@ -95,6 +107,9 @@ ________________________________________________________________________________
 
 <details>
 <summary> 279412f945939ba78ce0758d3fd83daa </summary>
+
+____________________________________________________________________________________________________________________
+
   <p></p>
  
 Using hash-identifier we can work out this hash is MD4, referencing the hashcat table once again we know to use "-m 900" for use in hashcat.
@@ -119,6 +134,9 @@ Alternitively, Hashes.com immediately tells us this again.
 
 <details>
 <summary> F09EDCB1FCEFC6DFB23DC3505A882655FF77375ED8AA2D1C13F640FCCC2D0C85 </summary>
+
+____________________________________________________________________________________________________________________
+
   <p></p>
   Using Hashes.com we can work out the algorithm used is SHA256
   <p></p>
@@ -137,6 +155,9 @@ ________________________________________________________________________________
 
 <details>
   <summary> 1DFECA0C002AE40B8619ECF94819CC1B </summary>
+  
+  ____________________________________________________________________________________________________________________
+  
   <p></p>
 Hashes.com identifies this algorithm as "NTLM"
   <p></p>
@@ -159,6 +180,9 @@ ________________________________________________________________________________
 
 <details>
 <summary> $6$aReallyHardSalt$6WKUTqzq.UQQmrm0p/T7MPpMbGNnzXPMAXi4bJMl9be.cfi3/qxIf.hsGpS41BqMhSrHVXgMpdjS6xeKZAs02.</summary>
+
+____________________________________________________________________________________________________________________
+
   <p></p>
 By looking at the first 3 characters "$6$" and searching this up in the hash types table we can see this is a salted hash of type SHA-512. This allows us to get the flag code of 1800.
   <p></p>
@@ -178,6 +202,9 @@ ________________________________________________________________________________
 
 <details>
 <summary> e5d8870e5bdd26602cab8dbe07a942c8669e56d6:tryhackme </summary>
+
+____________________________________________________________________________________________________________________
+
 <p></p>
 Using hashes.com, we can identify this hash as another SHA1 hash. The difference here however is that this is a salted SHA1 so when it comes to using the table it will be slightly different.
 <p></p>
