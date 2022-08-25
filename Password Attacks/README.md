@@ -6,6 +6,9 @@ ________________________________________________________________________________
 
 <details>
 <summary> Which type of password attack is performed locally? </summary>
+
+____________________________________________________________________________________________________________________
+
 <p></p>
 Between 'Password Cracking' and 'Password Guessing', <i>'Password Cracking'</i> is the correct answer as this usually involves cracking hashes on the attackers local machine.
 
@@ -17,6 +20,9 @@ ________________________________________________________________________________
 
 <details>
 <summary> What is the Juniper Networks ISG 2000 default password? </summary>
+
+____________________________________________________________________________________________________________________
+
 <p></p>
 
 Keeping the default credentials on your device is a huge security risk, and this is exactly what this question is about. By not changing the password you leave your device open to anyone who can do a quick google search and find the user's guide to the device:
@@ -37,6 +43,9 @@ ________________________________________________________________________________
 
 <details>
 <summary> Run the following crunch command: crunch 2 2 01234abcd -o crunch.txt. How many words did crunch generate? </summary>
+
+____________________________________________________________________________________________________________________
+
 <p></p>
 Crunch, at least for me was not installed on my Linux device, this was easily fixable by running the following:
   <p></p>
@@ -82,6 +91,9 @@ ________________________________________________________________________________
 <details>
 <summary> 
 Considering the following hash: 8d6e34f987851aa599257d3831a1af040886842f. What is the hash type? </summary>
+
+____________________________________________________________________________________________________________________
+
 <p></p>
 
 The tool of choice to identify hashes, 'hashid' was not installed on my Linux system by default. This can be fixed with the following command:
@@ -97,6 +109,9 @@ ________________________________________________________________________________
 
 <details>
 <summary> Perform a dictionary attack against the following hash: (The same one) What is the cracked value? Use rockyou.txt. </summary>
+
+____________________________________________________________________________________________________________________
+
 <p></p>
 Now that we known the hash is SHA-1, this helps with filling out the fields when we pass it through hashcat. From 'hashcat.net', we can ascertain the hash-mode code for SHA-1 is 100.
   <p></p>
@@ -131,6 +146,9 @@ Now that we known the hash is SHA-1, this helps with filling out the fields when
 
 <details>
 <summary> Perform a brute-force attack against the following MD5 hash: e48e13207341b6bffb7fb1622282247b. What is the cracked value? Note the password is a 4 digit number: [0-9][0-9][0-9][0-9] </summary>
+
+____________________________________________________________________________________________________________________
+
 <p></p>
 
 Referring back to the table in the previous question, we know that MD5 is represented by the code "0".
@@ -154,6 +172,9 @@ ________________________________________________________________________________
 
 <details>
 <summary> What would (be) the syntax you would use to create a rule to produce the following: "S[Word]NN  where N is Number and S is a symbol of !@? </summary>
+
+____________________________________________________________________________________________________________________
+
 <p></p>
   
 "Az" Specifies there is a word here 
@@ -181,6 +202,9 @@ ________________________________________________________________________________
 
 <details>
 <summary> Can you guess the FTP credentials without brute-forcing? What is the flag? </summary>
+
+____________________________________________________________________________________________________________________
+
 <p></p>
 
 Sometimes FTP servers have an 'anonymous' account left open. This allows access to a server to get information that is publically available, however in this case it can be used for more harm than good. As seen below using the username 'anonymous' with no password gave me access to this ftp server.
@@ -200,6 +224,9 @@ Sometimes FTP servers have an 'anonymous' account left open. This allows access 
 
 <details>
 <summary> What is the password? (for pittman@clinic.thmredteam.com) Note that the password format is as follows: [symbol][dictionary word][0-9][0-9]. </summary>
+
+____________________________________________________________________________________________________________________
+
 <p></p>
 
  To make this easier, first its best to create a new rule in john following the password formula given:
@@ -242,6 +269,9 @@ ________________________________________________________________________________
 
 <details>
 <summary> Perform a brute-forcing attack against the phillips account for the login page at [ip]/login-get using hydra? What is the flag? </summary>
+
+____________________________________________________________________________________________________________________
+
 <p></p>
 
 To conduct the attack, we need to once again use Hydra, this time for a 'GET' attack, hence '/login-get'. 
@@ -277,6 +307,9 @@ ________________________________________________________________________________
 
 <details>
 <summary> Perform a rule-based password attack to gain access to the burgess account. Find the flag at the following website: [ip]/login-post/. What is the flag? </summary>
+
+____________________________________________________________________________________________________________________
+
 <p></p>
 Similarly to the previous attack, we will be using Hydra. This time, we will be utilising a 'POST' attack instead.
   <p></p>
@@ -302,6 +335,9 @@ As usual, putting that command through and running it will lead you to find the 
   
 <details>
 <summary> Perform a password spraying attack to get access to the SSH://[ip] server to read /etc/flag. What is the flag? </summary>
+
+____________________________________________________________________________________________________________________
+
 <p></p>
 
 As this exercise relies on password spraying to accounts, first off is to create a small text file full of the usernames to use. The example below is based off of the doctors on the clinic.thmredteam.com website used in these exercises.
