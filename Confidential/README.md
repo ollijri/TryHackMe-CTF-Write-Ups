@@ -7,6 +7,9 @@ ________________________________________________________________________________
 
 <details>
 <summary> METHOD 1 </summary>
+  
+  ____________________________________________________________________________________________________________________
+  
   <p></p>
 On starting the machine, we are sent to '/home/ubuntu/confidential/' presenting us with the PDF we need to extract the QR code from.
   <p></p>
@@ -44,6 +47,9 @@ ________________________________________________________________________________
 
 <details>
 <summary> METHOD 2 </summary>
+
+____________________________________________________________________________________________________________________
+
   <p></p>
 By right clicking the image and chosing 'Save Image As' you can skip all the fuss as this saves the file without the red warning label.
 
