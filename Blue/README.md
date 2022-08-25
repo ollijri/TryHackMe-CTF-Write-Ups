@@ -107,13 +107,6 @@ Any folded content here. It requires an empty line just above it.
 ## Find Flags!
 
 <details>
-<summary><b>My section header in bold</b></summary>
-
-Any folded content here. It requires an empty line just above it.
-
-</details>
-
-<details>
 <summary> Flag1? This flag can be found at the system root. </summary>
 
 Any folded content here. It requires an empty line just above it.
