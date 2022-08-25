@@ -87,22 +87,39 @@ ________________________________________________________________________________
 
 <details>
 <summary> Research online how to convert a shell to meterpreter shell in metasploit. What is the name of the post module we will use? </summary>
+  
+____________________________________________________________________________________________________________________
 
-Any folded content here. It requires an empty line just above it.
-
+Thanks to a post by 'Binamra Pandey' I have learnt the command to convert a shell is as follows: 
+   
+``` post/multi/manage/shell_to_meterpreter ```
+  
+<p></p>
+  
+Source = https://infosecwriteups.com/metasploit-upgrade-normal-shell-to-meterpreter-shell-2f09be895646  
+____________________________________________________________________________________________________________________  
 </details>
 
 <details>
 <summary> Select this (use MODULE_PATH). Show options, what option are we required to change? </summary>
+  
+____________________________________________________________________________________________________________________ 
 
-Any folded content here. It requires an empty line just above it.
+``` SESSION ``` is the required option as we need to know which session (that has been backgrounded) to run this exploit on. In my example 'session 2' was backgrounded. 
+  
+To list all sessions use ``` sessions -l ```
+  
+![image](https://user-images.githubusercontent.com/66912443/186669104-9eca0c90-a0e7-453b-953b-3fc117fda793.png)
 
+
+____________________________________________________________________________________________________________________   
+  
 </details>
 
 <details>
 <summary> Run! If this doesn't work, try completing the exploit from the previous task once more. </summary>
 
-Any folded content here. It requires an empty line just above it.
+
 
 </details>
 
