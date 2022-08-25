@@ -205,20 +205,32 @@ ________________________________________________________________________________
 <details>
 <summary> Copy this password hash to a file and research how to crack it. What is the cracked password? </summary>
 
+  ____________________________________________________________________________________________________________________ 
+  
   <p></p>
   This is the hashdump we will be working with:
+  <p></p>
   
 ``` Jon:1000:aad3b435b51404eeaad3b435b51404ee:ffb43f0de35be4d9917ac0cc8ad57f8d::: ```
+
+Windows uses NTLM to authenticate a client on an Active-Directory domain. When it comes to cracking the passwords this is what we will need to select in hashcat. Looking at hashcat's hash mode table we know that NTLM uses hash mode 1000:
   
-- 'Jon' Indicates the username
-- '1000' Indicates the SID
-- 'aad3b' Indicates the beginning of an LM hash, a very weak hash that john is good at cracking!
+![image](https://user-images.githubusercontent.com/66912443/186678368-1512a206-2470-4e42-a1f9-22d083e375ae.png)
+
   
 To make the hash easier to work with, I have first copied the hash and put it into a file called 'hash.txt' in the root directory.
   
 ![image](https://user-images.githubusercontent.com/66912443/186675515-4466972d-a3f0-401f-8c8f-e940ce9b1f96.png)
 
-Next, we will use john the ripper to crack the hashes. The command belkow will tell john to crack the paswords in the correct format.
+Next, we will use hashcat to crack the hashes, this includes the hash mode type talked about above:
+  
+``` hashcat -m 1000 hash.txt /usr/share/wordlists/rockyou.txt ```
+  
+After letting it run long enough you will have your cracked hash!
+  
+![image](https://user-images.githubusercontent.com/66912443/186678699-75c0b403-b9b2-477e-9c0f-f43e03e4925c.png)
+
+____________________________________________________________________________________________________________________ 
 
 </details>
 
