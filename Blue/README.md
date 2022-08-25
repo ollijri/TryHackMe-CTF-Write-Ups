@@ -243,21 +243,50 @@ ________________________________________________________________________________
 <details>
 <summary> Flag1? This flag can be found at the system root. </summary>
 
-Any folded content here. It requires an empty line just above it.
+____________________________________________________________________________________________________________________ 
+  <p></p>  
+  
+The first step was to change sessions back to the dos shell so i could manouver about the system again. Once I was back in the shell, I changed to the root directory 'C:/'.
+  
+![image](https://user-images.githubusercontent.com/66912443/186680032-ff6ea4db-ec57-41c0-ab8f-9b352e7960ef.png)
 
+Here i printed the contents of the system root exposing 'flag1.txt'
+  
+![image](https://user-images.githubusercontent.com/66912443/186680449-8f29e773-0ffc-492a-89a2-0f8b24173a2e.png)
+
+From here on I used the command 'more' to view the contents of the file. (I dont know why meterpreter died)
+  
+![image](https://user-images.githubusercontent.com/66912443/186680549-81dfd518-421f-4819-a779-bc1eabe6d035.png)
+
+____________________________________________________________________________________________________________________ 
+  
 </details>
 
 <details>
 <summary> Flag2? This flag can be found at the location where passwords are stored within Windows. </summary>
+  
+  ____________________________________________________________________________________________________________________
+  
+  <p></p>
+  
+Windows passwords are stored at ``` C:\windows\system32\config\SAM ```.
+  
+  
+Navigating to the \config\ directory led me to the flag2.txt file!
+ 
+![image](https://user-images.githubusercontent.com/66912443/186682465-dca073d7-c605-4e51-ba68-b4c6cf5b615d.png)
 
-Any folded content here. It requires an empty line just above it.
+____________________________________________________________________________________________________________________
 
 </details>
 
 <details>
-<summary> flag3? This flag can be found in an excellent location to loot. After all, Administrators usually have pretty interesting things saved. </summary>
+<summary> Flag 3? This flag can be found in an excellent location to loot. After all, Administrators usually have pretty interesting things saved. </summary>
 
-Any folded content here. It requires an empty line just above it.
+This was found in the user Jon's \Documents\ directory.
+  
+![image](https://user-images.githubusercontent.com/66912443/186683718-22c28b88-1ae6-4aa4-a154-7fb205924a37.png)
+
 
 </details>
 
