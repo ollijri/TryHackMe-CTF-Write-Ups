@@ -65,6 +65,9 @@ ________________________________________________________________________________
 
 <details>
 <summary> What is the crunch command to generate a list containing THM@! and output to a filed named tryhackme.txt? </summary>
+  
+  ____________________________________________________________________________________________________________________
+  
 <p></p>
 
    This task is to create a LIST containing this password, not just generate the word itself. Using the following logic:
