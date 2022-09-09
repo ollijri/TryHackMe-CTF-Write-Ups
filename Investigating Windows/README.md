@@ -208,7 +208,7 @@ ________________________________________________________________________________
 ____________________________________________________________________________________________________________________  
 DNS Poisining involves an attacker replacing a DNS database entry with a malicious IP so that when the user would regularly want to go to google.com for example, they would be redirected to an attackers IP instead, which is exactly what is seen below.
   
-Using the command ``` GetDnsClientCache ``` we can view the DNS cache of the computer. As seen in the below screenshot, it is mostly normal except for 'google.com' which has had its ip changed from the standard '8.8.8.8' to '76.32.97.132'.
+Using the command ``` Get-DnsClientCache ``` we can view the DNS cache of the computer. As seen in the below screenshot, it is mostly normal except for 'google.com' which has had its ip changed from the standard '8.8.8.8' to '76.32.97.132'.
   
 ![image](https://user-images.githubusercontent.com/66912443/189345380-77a81275-9b1e-4b90-9610-30cdc6a11c1f.png)
 
