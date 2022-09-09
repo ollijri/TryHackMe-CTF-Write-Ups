@@ -190,12 +190,15 @@ ________________________________________________________________________________
 </details>
 
 <details>
-<summary> What was the extension name of the shell uploaded via the servers website? </summary>
+<summary> What was the last port the attacker opened? </summary>
   <p></p>
 
 ____________________________________________________________________________________________________________________ 
 
- 
+In the inbound rules in the 'Windows Firewall' application we can see the latest port opened is 1337:
+  
+![image](https://user-images.githubusercontent.com/66912443/189347843-799da4bb-d07b-40a6-8bd3-75226ac76dec.png)
+
   
 ____________________________________________________________________________________________________________________  
   
