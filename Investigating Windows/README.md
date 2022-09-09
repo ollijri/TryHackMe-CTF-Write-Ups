@@ -54,11 +54,14 @@ ________________________________________________________________________________
 </details>
 
 <details>
-<summary>  </summary>
+<summary> What two accounts had administrative privileges (other than the Administrator user)? </summary>
   <p></p>
 
 ____________________________________________________________________________________________________________________  
+The command ``` net localgroup Administrators ``` will print out a list of all administrators on the machine:
   
+![image](https://user-images.githubusercontent.com/66912443/189336462-88bbddae-8ed4-4b00-8231-49e6a038927a.png)
+
 
 ____________________________________________________________________________________________________________________  
   
