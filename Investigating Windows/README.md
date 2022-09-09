@@ -68,78 +68,96 @@ ________________________________________________________________________________
 </details>
 
 <details>
-<summary>  </summary>
+<summary> Whats the name of the scheduled task that is malicous. </summary>
   <p></p>
 
 ____________________________________________________________________________________________________________________  
+ 'Task Scheduler' can be used to see all scheduled tasks, as the name suggests. In the bottom section, 'Active Tasks' there is a task named 'clean file system' which unlike most tasks, does not use correct capitalisation and is not located in the \Microsoft\ folder.
   
+![image](https://user-images.githubusercontent.com/66912443/189337465-3467dcd7-457c-464b-a17b-ff2b732af90a.png)
+
 
 ____________________________________________________________________________________________________________________  
   
 </details>
 
 <details>
-<summary>  </summary>
+<summary> What file was the task trying to run daily? </summary>
   <p></p>
 
 ____________________________________________________________________________________________________________________  
+By double clicking the suspicious file, we can see more information about it. From the tabs that appear at the top, we can see it starts the program nc.ps1 which from the looks of it starts a reverse shell.
   
+![image](https://user-images.githubusercontent.com/66912443/189337785-51cad53a-7327-40e4-867b-94b4966543d1.png)
+
 
 ____________________________________________________________________________________________________________________  
   
 </details>
 
 <details>
-<summary>  </summary>
+<summary> What port did this file listen locally for? </summary>
   <p></p>
 
 ____________________________________________________________________________________________________________________  
-  
+``` Answer = 1348 ```  
 
 ____________________________________________________________________________________________________________________  
   
 </details>
 
 <details>
-<summary>  </summary>
+<summary> When did Jenny last logon? </summary>
   <p></p>
 
 ____________________________________________________________________________________________________________________  
+Using the command ``` net user jenny ``` we can see jenny has NEVER logged on.
   
+![image](https://user-images.githubusercontent.com/66912443/189338166-568ba8ea-d255-490d-a8c6-7f16140a6491.png)
 
 ____________________________________________________________________________________________________________________  
   
 </details>
 
 <details>
-<summary>  </summary>
+<summary> At what date did the compromise take place? </summary>
   <p></p>
 
 ____________________________________________________________________________________________________________________  
+Still in the task scheduler, scrolling to the very right allows you to view the creation date of the task:
   
+![image](https://user-images.githubusercontent.com/66912443/189338598-f8def953-8124-467d-acf3-2ed46775488d.png)
 
 ____________________________________________________________________________________________________________________  
   
 </details>
 
 <details>
-<summary>  </summary>
+<summary> At what time did Windows first assign special privileges to a new logon? </summary>
   <p></p>
 
 ____________________________________________________________________________________________________________________  
+The previous tasks lets us know the compromise took place on the 3/2/2019 so using the event viewer we can look for special privileges being assigned around that time. There was a lot of special privilges assigned at this time so i must admit I dont fully understand why this one in particular is the one.
   
+![image](https://user-images.githubusercontent.com/66912443/189341060-4be0a48c-1523-4b17-92cd-d21afba21f3f.png)
 
 ____________________________________________________________________________________________________________________  
   
 </details>
 
 <details>
-<summary>  </summary>
+<summary> What tool was used to get Windows passwords? </summary>
   <p></p>
 
 ____________________________________________________________________________________________________________________  
+Along with 'clean file system' there was other suspicious files susch as 'checked logged in' and 'GameOver'. Checking the actions of the 'GameOver' task reveals it is using the 'mim' executable to output the passwords to 'o.txt'.
   
+![image](https://user-images.githubusercontent.com/66912443/189342107-fff4be46-c85e-4663-84ec-f1094751bf13.png)
 
+Checking the contents of what should be "o.txt" (called mim-out.txt) exposes the program that was used:
+  
+![image](https://user-images.githubusercontent.com/66912443/189342376-d7b85915-b06b-4024-98ab-1cad72b34f9a.png)
+  
 ____________________________________________________________________________________________________________________  
   
 </details>
