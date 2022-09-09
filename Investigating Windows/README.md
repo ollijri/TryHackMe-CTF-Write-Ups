@@ -27,22 +27,27 @@ ________________________________________________________________________________
 </details>
 
 <details>
-<summary>  </summary>
+<summary> When did John log onto the system last? </summary>
   <p></p>
 
 ____________________________________________________________________________________________________________________  
-  
+Using powershell (or cmd, either works) using the command ``` net user john ``` shows all the information you need to know. net user allows the managing of windows local user accounts.
+
+![image](https://user-images.githubusercontent.com/66912443/189335189-c25b2bea-1a19-4414-9495-766d44cf0297.png)
 
 ____________________________________________________________________________________________________________________  
   
 </details>
 
 <details>
-<summary>  </summary>
+<summary> What IP does the system connect to when it first starts? </summary>
   <p></p>
 
 ____________________________________________________________________________________________________________________  
-  
+ The following cmd window opens when the machine first starts:
+ 
+ ![image](https://user-images.githubusercontent.com/66912443/189335804-9ec41fb1-b48e-4a0a-b760-d9b6623328b7.png)
+
 
 ____________________________________________________________________________________________________________________  
   
