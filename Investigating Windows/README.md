@@ -163,22 +163,52 @@ ________________________________________________________________________________
 </details>
 
 <details>
-<summary>  </summary>
+<summary> What was the attackers external control and command servers IP? </summary>
   <p></p>
 
 ____________________________________________________________________________________________________________________  
+The explanation for this can be found in the last question
   
+``` Answer = 76.32.97.132 ```
 
+____________________________________________________________________________________________________________________  
+</details>
+
+<details>
+<summary> What was the extension name of the shell uploaded via the servers website? </summary>
+  <p></p>
+
+____________________________________________________________________________________________________________________ 
+
+ 
+  
 ____________________________________________________________________________________________________________________  
   
 </details>
 
 <details>
-<summary>  </summary>
+<summary> What was the extension name of the shell uploaded via the servers website? </summary>
+  <p></p>
+
+____________________________________________________________________________________________________________________ 
+
+ 
+  
+____________________________________________________________________________________________________________________  
+  
+</details>
+  
+  
+</details>
+
+<details>
+<summary> Check for DNS poisoning, what site was targeted? </summary>
   <p></p>
 
 ____________________________________________________________________________________________________________________  
+DNS Poisining involves an attacker replacing a DNS database entry with a malicious IP so that when the user would regularly want to go to google.com for example, they would be redirected to an attackers IP instead, which is exactly what is seen below.
   
+Using the command ``` GetDnsClientCache ``` to view the 
 
 ____________________________________________________________________________________________________________________  
   
