@@ -28,4 +28,18 @@ From the same window as the previous task, we can see the integrity level is "Hi
 
 ## Threads 
 
+### What is the thread ID of the first thread created by notepad.exe?
 
+Still filtered, scroll right to the top of the list. The detail of the second notepad process reveals the answer.
+
+![image](https://user-images.githubusercontent.com/66912443/189846490-319867d1-d03e-4b5e-be80-23c107d8fbbe.png)
+
+``` Answer = 5908 ```
+
+### What is the stack argument of the previous thread? 
+
+Viewing the event properties of the process (right click and select) and going to the event tab reveals the 'Thread', this is the stack argument.
+
+![image](https://user-images.githubusercontent.com/66912443/189847015-8839b066-1911-4e1f-ac21-4df6607f1a9f.png)
+
+``` Answer = 6584 ```
