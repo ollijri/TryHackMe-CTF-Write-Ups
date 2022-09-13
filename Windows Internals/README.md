@@ -43,3 +43,21 @@ Viewing the event properties of the process (right click and select) and going t
 ![image](https://user-images.githubusercontent.com/66912443/189847015-8839b066-1911-4e1f-ac21-4df6607f1a9f.png)
 
 ``` Answer = 6584 ```
+
+##  Virtual Memory 
+
+### What is the total theoretical maximum virtual address space of a 32-bit x86 system?
+
+Due to the limitations of the FAT32 filesystem, the maximum virtual address space is 4GB.
+
+### What default setting flag can be used to reallocate user process address space?
+
+
+
+### What is the base address of "notepad.exe"?
+
+By navigating to the notepad process with the operation 'load image', we can see the image base in the details. Opening up the properties of this process gives a much clearer view of the details:
+
+![image](https://user-images.githubusercontent.com/66912443/189848285-a8226e5f-d340-44ff-9d93-078f8194b658.png)
+
+``` Answer = 0x7ff652ec0000 ```
