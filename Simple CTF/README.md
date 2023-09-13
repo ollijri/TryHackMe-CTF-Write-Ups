@@ -10,7 +10,6 @@ If we take the port of the adapter and run an abrasive scan on it using nmap, it
 
 ![image](https://github.com/ollijri/TryHackMe-Write-Ups/assets/66912443/06bf66c5-ef5c-4b0a-ba57-7a434fb71470)
 
-
 What's the CVE you're using against the application? 
 
 One of the services running is http, so browings to the IP in the browser brings an apache web page
@@ -28,7 +27,6 @@ Browsing to "/simple" (chosen as it matches the CTF name), we are presented with
 A quick google of an exploit for CMSMS v2.8.8 brings up a page on exploit-db exposing that this version is vulnerable to CVE-2019-9053
 
 ![image](https://github.com/ollijri/TryHackMe-Write-Ups/assets/66912443/5e1ea745-3d4d-4871-813b-aaea70783d73)
-
 
 To what kind of vulnerability is the application vulnerable?
 
