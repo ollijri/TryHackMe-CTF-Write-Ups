@@ -17,12 +17,22 @@ One of the services running is http, so browings to the IP in the browser brings
 
 ![image](https://github.com/ollijri/TryHackMe-Write-Ups/assets/66912443/5e241e1c-c56f-48dd-9c55-aafd7522d357)
 
+using dirbuster or gobuster, we can scan the website for hidden/more directories. As can be seen below, the two "/simple" and "/server-status" were discovered.
 
+![image](https://github.com/ollijri/TryHackMe-Write-Ups/assets/66912443/e9ee64e2-ebee-4d08-ae57-dbd1d05cc2b4)
+
+Browsing to "/simple" (chosen as it matches the CTF name), we are presented with the following hidden site. This is a document site for a content management system "CMS made simple". At the bottom of the site, it specifies the version of "CMS Made Simple" is v2.2.8
+
+![image](https://github.com/ollijri/TryHackMe-Write-Ups/assets/66912443/199b9f92-72d5-4d9c-b8d4-de84f1fe5323)
+
+A quick google of an exploit for CMSMS v2.8.8 brings up a page on exploit-db exposing that this version is vulnerable to CVE-2019-9053
+
+![image](https://github.com/ollijri/TryHackMe-Write-Ups/assets/66912443/5e1ea745-3d4d-4871-813b-aaea70783d73)
 
 
 To what kind of vulnerability is the application vulnerable?
 
-
+CVE-2019-9053 is an SQL Injection exploit (SQLi)
 
 What's the password?
 
