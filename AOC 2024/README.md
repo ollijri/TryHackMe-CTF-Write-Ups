@@ -1,6 +1,6 @@
 INCOMPLETE MESSY WRITEUP
 
-Day 1: Maybe SOC-mas music, he thought, doesn't come from a store?
+## Day 1: Maybe SOC-mas music, he thought, doesn't come from a store?
 
 **Looks like the song.mp3 file is not what we expected! Run "exiftool song.mp3" in your terminal to find out the author of the song. Who is the author?** 
 
@@ -42,6 +42,48 @@ By traversing to Bloatware-WarevilleTHM/CryptoWallet-Search (click on the name a
 ![image](https://github.com/user-attachments/assets/f6543ff7-5833-438d-a1d8-65f14305d407)
 
 Answer = 1
+
+##  Day 2: One man's false positive is another man's potpourri.
+
+**What is the name of the account causing all the failed login attempts?**
+
+Filter the results event.outcome to "failure" and event.category to "authentication" to see the answer
+
+![image](https://github.com/user-attachments/assets/9bc875f6-ca04-490b-b83b-c5094118307c)
+
+Answer = service_admin
+
+**How many failed logon attempts were observed?**
+
+With the same results filtered as the previous question, look at the number of "hits"
+
+![image](https://github.com/user-attachments/assets/195212e2-ec9e-4a4a-a84f-b0f58b313567)
+
+Answer = 6791
+
+**What is the IP address of Glitch?**
+
+By following the tutorial for this day it will lead you to 6802 events. filtering out the most common source IP will provide the answer.
+
+![image](https://github.com/user-attachments/assets/2caf0312-fb53-43a4-949b-1c0b25fa3946)
+
+![image](https://github.com/user-attachments/assets/dbc0919e-8a1f-4933-97b4-f85696cd92e0)
+
+![image](https://github.com/user-attachments/assets/ac30cf16-4c96-4f07-b896-ce69c869bb06)
+
+
+Answer = 10.0.255.1
+
+**When did Glitch successfully logon to ADM-01? Format: MMM D, YYYY HH:MM:SS.SSS**
+
+Filtering event.outcome to "success" and adding a filter to the Glitch's IP (10.0.255.1) found in the previous question gives you the answer
+
+![image](https://github.com/user-attachments/assets/5fceaec5-dfa1-4670-bbcf-afeee2420f6a)
+
+Answer = Dec 1, 2024 @ 08:54:39.000
+
+**What is the decoded command executed by Glitch to fix the systems of Wareville?**
+
 
 
 
