@@ -84,7 +84,21 @@ Answer = Dec 1, 2024 @ 08:54:39.000
 
 **What is the decoded command executed by Glitch to fix the systems of Wareville?**
 
+The command can be found by resetting the time zone back to 29th Nov - Dec 3rd and removing all filters. This, with the collums applied in the screenshot below will show the encoded string that Glitch supposedly used.
+
+![image](https://github.com/user-attachments/assets/53fdd7a1-2a0d-43fc-a1ce-275f0118af0f)
+
+Chucking the string in cyberchef with the recipe of from base64 coupled with "Remove Null Bytes" will give the answer.
+
+Answer = Install-WindowsUpdate -AcceptAll -AutoReboot
 
 
 
+
+
+
+
+
+
+Answer = 
 
