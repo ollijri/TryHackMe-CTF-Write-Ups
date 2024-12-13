@@ -73,7 +73,12 @@ ________________________________________________________________________________
 
 ##  Day 2: One man's false positive is another man's potpourri.
 
-**What is the name of the account causing all the failed login attempts?**
+</details>
+
+<details>
+<summary> What is the name of the account causing all the failed login attempts? </summary>
+  <p></p>
+
 ____________________________________________________________________________________________________________________
 Filter the results event.outcome to "failure" and event.category to "authentication" to see the answer
 
@@ -81,7 +86,13 @@ Filter the results event.outcome to "failure" and event.category to "authenticat
 
 ```Answer = service_admin```
 ____________________________________________________________________________________________________________________
-**How many failed logon attempts were observed?**
+
+</details>
+
+<details>
+<summary> How many failed logon attempts were observed? </summary>
+  <p></p>
+
 ____________________________________________________________________________________________________________________
 With the same results filtered as the previous question, look at the number of "hits"
 
@@ -89,7 +100,13 @@ With the same results filtered as the previous question, look at the number of "
 
 ```Answer = 6791```
 ____________________________________________________________________________________________________________________
-**What is the IP address of Glitch?**
+
+</details>
+
+<details>
+<summary> What is the IP address of Glitch? </summary>
+  <p></p>
+
 ____________________________________________________________________________________________________________________
 By following the tutorial for this day it will lead you to 6802 events. filtering out the most common source IP will provide the answer.
 
@@ -102,7 +119,13 @@ By following the tutorial for this day it will lead you to 6802 events. filterin
 
 ```Answer = 10.0.255.1```
 ____________________________________________________________________________________________________________________
-**When did Glitch successfully logon to ADM-01? Format: MMM D, YYYY HH:MM:SS.SSS**
+
+</details>
+
+<details>
+<summary> When did Glitch successfully logon to ADM-01? Format: MMM D, YYYY HH:MM:SS.SSS </summary>
+  <p></p>
+
 ____________________________________________________________________________________________________________________
 Filtering event.outcome to "success" and adding a filter to the Glitch's IP (10.0.255.1) found in the previous question gives you the answer
 
@@ -110,7 +133,13 @@ Filtering event.outcome to "success" and adding a filter to the Glitch's IP (10.
 
 ```Answer = Dec 1, 2024 @ 08:54:39.000```
 ____________________________________________________________________________________________________________________
-**What is the decoded command executed by Glitch to fix the systems of Wareville?**
+
+</details>
+
+<details>
+<summary> What is the decoded command executed by Glitch to fix the systems of Wareville? </summary>
+  <p></p>
+
 ____________________________________________________________________________________________________________________
 The command can be found by resetting the time zone back to 29th Nov - Dec 3rd and removing all filters. This, with the collums applied in the screenshot below will show the encoded string that Glitch supposedly used.
 
@@ -121,12 +150,54 @@ Chucking the string in cyberchef with the recipe of from base64 coupled with "Re
 ```Answer = Install-WindowsUpdate -AcceptAll -AutoReboot```
 ____________________________________________________________________________________________________________________
 
+</details>
+
+##  Day 3: Even if I wanted to go, their vulnerabilities wouldn't allow it.
+
+<details>
+<summary> Where was the web shell uploaded to? </summary>
+  <p></p>
+
+____________________________________________________________________________________________________________________
+
+As we know this is a web shell upload, we can stick with "message: "shell.php"" in the KQL search bar. This gives us a number of alerts, the top result gives us the answer.
+
+![image](https://github.com/user-attachments/assets/d7422662-1a2e-459f-8a2b-75823ed75dc8)
+
+```Answer = /media/images/rooms/shell.php```
+____________________________________________________________________________________________________________________
 
 
+</details>
 
 
+<details>
+<summary> What IP address accessed the web shell? </summary>
+  <p></p>
+
+____________________________________________________________________________________________________________________
+By exploring the alerts, we can find one that accessed a full directory and inputted a command into the web shell. The IP can be found at the beginning of the "message" field of this alert.
+
+![image](https://github.com/user-attachments/assets/c8fcaf47-bba1-4bcd-8933-b1a86e6a2257)
+
+```Answer = 10.11.83.34```
+____________________________________________________________________________________________________________________
 
 
+</details>
 
-Answer = 
 
+<details>
+<summary> What is the contents of the flag.txt? </summary>
+  <p></p>
+
+____________________________________________________________________________________________________________________
+
+This can be found by using the search bar on the browser to go to the same directory that shell.php is stored in, but swapping "shell.php" for "flag.txt"
+
+![image](https://github.com/user-attachments/assets/4cf5282c-f568-453d-a2a3-34f62ac75b58)
+
+```Answer = THM{Gl1tch_Was_H3r3}```
+____________________________________________________________________________________________________________________
+
+</details>
