@@ -201,3 +201,104 @@ This can be found by using the search bar on the browser to go to the same direc
 ____________________________________________________________________________________________________________________
 
 </details>
+
+##  Day 4: I’m all atomic inside!
+
+<details>
+<summary> What was the flag found in the .txt file that is found in the same directory as the PhishingAttachment.xslm artefact? </summary>
+  <p></p>
+
+____________________________________________________________________________________________________________________
+
+Follow the instructions and it will take you to the directory where the file is stored (C:\Users\Admin\Appdata\Local\temp)
+
+![image](https://github.com/user-attachments/assets/a192d183-36f6-4d17-8063-14242fde1c16)
+
+```Answer = THM{GlitchTestingForSpearphishing}```
+____________________________________________________________________________________________________________________
+
+</details>
+
+
+<details>
+<summary> What ATT&CK technique ID would be our point of interest? </summary>
+  <p></p>
+
+____________________________________________________________________________________________________________________
+
+This was found by searched "windows command shell" on the mitre attack framework.
+
+```Answer =  T1059 ```
+____________________________________________________________________________________________________________________
+
+</details>
+
+
+<details>
+<summary> What ATT&CK subtechnique ID focuses on the Windows Command Shell? </summary>
+  <p></p>
+
+____________________________________________________________________________________________________________________
+
+This was found by searched "windows command shell" on the mitre attack framework.
+
+```Answer = T1059.003 ```
+____________________________________________________________________________________________________________________
+
+</details>
+
+
+<details>
+<summary> What is the name of the Atomic Test to be simulated? </summary>
+  <p></p>
+
+____________________________________________________________________________________________________________________
+
+This was found using the command Invoke-AtomicTest in the VM provided for todays challenge.
+
+![image](https://github.com/user-attachments/assets/60bae8f9-26e6-473c-b9d0-64cded778da6)
+
+There was 5 possible options for the subtechnique T1059.003, so Im not sure why this one was specifically chosen as the correct answer.
+
+```Answer = Simulate BlackByte Ransomware Print Bombing```
+____________________________________________________________________________________________________________________
+
+</details>
+
+
+<details>
+<summary> What is the name of the file used in the test? </summary>
+  <p></p>
+
+____________________________________________________________________________________________________________________
+
+This can be seen in the same screenshot provided for the previous question. It sticks out.
+
+![image](https://github.com/user-attachments/assets/85401e43-aafd-4fdc-904f-76de93c0955c)
+
+```Answer = Wareville_ransomware.txt```
+____________________________________________________________________________________________________________________
+
+</details>
+
+
+<details>
+<summary> What is the flag found from this Atomic Test? </summary>
+  <p></p>
+
+____________________________________________________________________________________________________________________
+
+To run this test, the command ```Invoke-AtomicTest T1059.003 - TestNumbers 4``` is used. Test 4 is the one that includes the reference to the holiday hack challenges.
+
+![image](https://github.com/user-attachments/assets/506a43c2-c11a-4131-ba6d-233a4b4e3e8d)
+
+This outputs a PDF to the desktop. I had to name it for it to actually save though.
+
+![image](https://github.com/user-attachments/assets/82d3de92-4303-4c0e-8745-bd54444d8a22)
+
+Fun sidenote, the base64 in the flag translates to _Glitch is not the enemy_
+
+```Answer = flag=THM{R2xpdGNoIGlzIG5vdCB0aGUgZW5lbXk=}```
+____________________________________________________________________________________________________________________
+
+</details>
