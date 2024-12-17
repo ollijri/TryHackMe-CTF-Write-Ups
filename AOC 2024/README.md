@@ -302,3 +302,47 @@ Fun sidenote, the base64 in the flag translates to _Glitch is not the enemy_
 ____________________________________________________________________________________________________________________
 
 </details>
+
+## Day 5: SOC-mas XX-what-ee?
+
+<details>
+<summary> What is the flag discovered after navigating through the wishes? </summary>
+  <p></p>
+
+____________________________________________________________________________________________________________________
+
+Assuming you have followed the tutorial up to this point, you will be looking at a section of XML like below:
+
+![image](https://github.com/user-attachments/assets/ccb89a55-fcba-4452-b7d7-6d2b2ae7b54d)
+
+In order to quickly navigate through all the wishes without typing them one by one, highlight the "1" of "wish_1.txt" and right click -> sent to intruder. This will add characters around the "1" and will define it as the section of code that will be manipulated through repeat attacks. You should see the following:
+
+![image](https://github.com/user-attachments/assets/1e562879-1c08-40d2-9631-9ed5ac7f7882)
+
+From the Payloads section on the right of Intruder, select "Numbers" as "Payload Type" and then set the range to whatever you like to try and find the flag (I did 1-30 to start).
+
+![image](https://github.com/user-attachments/assets/abf72045-227d-421a-a8c7-b4ad8d94d2fd)
+
+Click the orange "start attack" and it will iterate through wish_1.txt - wish_30.txt in a seperate window. Click the tab at the bottom "Response" to see the outcome of each attempt.
+
+![image](https://github.com/user-attachments/assets/a85614e9-a7f6-4cd3-b3b9-ddc2e257191b)
+
+```Answer = THM{Brut3f0rc1n6_mY_w4y}```
+____________________________________________________________________________________________________________________
+
+</details>
+
+<details>
+<summary> What is the flag seen on the possible proof of sabotage? </summary>
+  <p></p>
+
+____________________________________________________________________________________________________________________
+
+This can be found at the directory /CHANGELOG like in the tutorial, not hidden at all
+
+![image](https://github.com/user-attachments/assets/4467a1b3-51da-461b-aa71-f72fa16b3ae5)
+
+```Answer = THM{m4y0r_m4lw4r3_b4ckd00rs}```
+____________________________________________________________________________________________________________________
+
+</details>
